@@ -1,8 +1,8 @@
-package alfaerp2;
+package alfaerp;
 
 import Forms.frmLogin;
 
-public class ALFAERP2 {
+public class ALFAERP {
 
     public static void main(String[] args) {
         frmLogin Login = new frmLogin();
