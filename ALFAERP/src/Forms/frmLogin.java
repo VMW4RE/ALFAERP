@@ -4,6 +4,9 @@
  */
 package Forms;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USUARIO
@@ -57,6 +60,11 @@ public class frmLogin extends javax.swing.JFrame {
         btnLogin.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("LOGIN");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 277, 250, -1));
 
         txtUser.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
@@ -107,6 +115,22 @@ public class frmLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+        if(1+1 == 3){    //condição de login - mudar quando tiver o banco de dados//
+            JOptionPane.showMessageDialog(rootPane,"USUARIO E SENHA INCORRETAS");
+            txtUser.setText("");
+            txtPass.setText("");
+            txtUser.requestFocusInWindow();
+            return;          
+            
+        }
+        frmMenu frmmenu = new frmMenu();
+        this.setVisible(false);
+        frmmenu.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frmmenu.setVisible(true);
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments
