@@ -98,6 +98,14 @@ public class frmMenu extends javax.swing.JFrame {
         btnPDV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shopping-cart-free-icon-font.png"))); // NOI18N
         btnPDV.setText("SISTEMA");
         btnPDV.setBorder(null);
+        btnPDV.setBorderPainted(false);
+        btnPDV.setFocusable(false);
+        btnPDV.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnPDV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPDVActionPerformed(evt);
+            }
+        });
 
         btnCad.setBackground(new java.awt.Color(0, 58, 76));
         btnCad.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
@@ -105,7 +113,9 @@ public class frmMenu extends javax.swing.JFrame {
         btnCad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add-free-icon-font.png"))); // NOI18N
         btnCad.setText("CADASTRO");
         btnCad.setBorder(null);
+        btnCad.setBorderPainted(false);
         btnCad.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCad.setFocusable(false);
 
         btnCon.setBackground(new java.awt.Color(0, 58, 76));
         btnCon.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
@@ -113,6 +123,8 @@ public class frmMenu extends javax.swing.JFrame {
         btnCon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-free-icon-font.png"))); // NOI18N
         btnCon.setText("CONSULTA");
         btnCon.setBorder(null);
+        btnCon.setBorderPainted(false);
+        btnCon.setFocusable(false);
 
         btnRel.setBackground(new java.awt.Color(0, 58, 76));
         btnRel.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
@@ -120,6 +132,8 @@ public class frmMenu extends javax.swing.JFrame {
         btnRel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/document-free-icon-font.png"))); // NOI18N
         btnRel.setText("RELATÓRIOS");
         btnRel.setBorder(null);
+        btnRel.setBorderPainted(false);
+        btnRel.setFocusable(false);
 
         btnEst.setBackground(new java.awt.Color(0, 58, 76));
         btnEst.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
@@ -127,6 +141,8 @@ public class frmMenu extends javax.swing.JFrame {
         btnEst.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boxes-free-icon-font.png"))); // NOI18N
         btnEst.setText("ESTOQUE");
         btnEst.setBorder(null);
+        btnEst.setBorderPainted(false);
+        btnEst.setFocusable(false);
 
         btnCom.setBackground(new java.awt.Color(0, 58, 76));
         btnCom.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
@@ -134,6 +150,8 @@ public class frmMenu extends javax.swing.JFrame {
         btnCom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/truck-loading-free-icon-font.png"))); // NOI18N
         btnCom.setText("COMPRAS");
         btnCom.setBorder(null);
+        btnCom.setBorderPainted(false);
+        btnCom.setFocusable(false);
 
         btnHelp.setBackground(new java.awt.Color(0, 58, 76));
         btnHelp.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
@@ -141,6 +159,8 @@ public class frmMenu extends javax.swing.JFrame {
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/interrogation-free-icon-font.png"))); // NOI18N
         btnHelp.setText("AJUDA");
         btnHelp.setBorder(null);
+        btnHelp.setBorderPainted(false);
+        btnHelp.setFocusable(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -209,6 +229,10 @@ public class frmMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPDVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPDVActionPerformed
+        
+    }//GEN-LAST:event_btnPDVActionPerformed
 
     /**
      * @param args the command line arguments
