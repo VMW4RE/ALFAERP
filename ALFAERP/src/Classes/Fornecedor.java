@@ -9,29 +9,39 @@ package Classes;
  * @author EMPRESA JUNIOR
  */
 public class Fornecedor {
-    private String codigoforn;
+    private Long codigoforn;
     private String nomesocforn;
     private String cnpfforn;
-    private String endeforn;
+    private String ruaforn;
+    private String cidadeforn;
+    private String estadoforn;
+    private String cepforn;
+    private String bairroforn;
+    private String ncasaforn;
     private String forntel1;
     private String forntel2;
     private String fornemail;
 
-    public Fornecedor(String codigoforn, String nomesocforn, String cnpfforn, String endeforn, String forntel1, String forntel2, String fornemail) {
+    public Fornecedor(Long codigoforn, String nomesocforn, String cnpfforn, String ruaforn, String cidadeforn, String estadoforn, String cepforn, String bairroforn, String ncasaforn, String forntel1, String forntel2, String fornemail) {
         this.codigoforn = codigoforn;
         this.nomesocforn = nomesocforn;
         this.cnpfforn = cnpfforn;
-        this.endeforn = endeforn;
+        this.ruaforn = ruaforn;
+        this.cidadeforn = cidadeforn;
+        this.estadoforn = estadoforn;
+        this.cepforn = cepforn;
+        this.bairroforn = bairroforn;
+        this.ncasaforn = ncasaforn;
         this.forntel1 = forntel1;
         this.forntel2 = forntel2;
         this.fornemail = fornemail;
     }
 
-    public String getCodigoforn() {
+    public Long getCodigoforn() {
         return codigoforn;
     }
 
-    public void setCodigoforn(String codigoforn) {
+    public void setCodigoforn(Long codigoforn) {
         this.codigoforn = codigoforn;
     }
 
@@ -51,12 +61,52 @@ public class Fornecedor {
         this.cnpfforn = cnpfforn;
     }
 
-    public String getEndeforn() {
-        return endeforn;
+    public String getRuaforn() {
+        return ruaforn;
     }
 
-    public void setEndeforn(String endeforn) {
-        this.endeforn = endeforn;
+    public void setRuaforn(String ruaforn) {
+        this.ruaforn = ruaforn;
+    }
+
+    public String getCidadeforn() {
+        return cidadeforn;
+    }
+
+    public void setCidadeforn(String cidadeforn) {
+        this.cidadeforn = cidadeforn;
+    }
+
+    public String getEstadoforn() {
+        return estadoforn;
+    }
+
+    public void setEstadoforn(String estadoforn) {
+        this.estadoforn = estadoforn;
+    }
+
+    public String getCepforn() {
+        return cepforn;
+    }
+
+    public void setCepforn(String cepforn) {
+        this.cepforn = cepforn;
+    }
+
+    public String getBairroforn() {
+        return bairroforn;
+    }
+
+    public void setBairroforn(String bairroforn) {
+        this.bairroforn = bairroforn;
+    }
+
+    public String getNcasaforn() {
+        return ncasaforn;
+    }
+
+    public void setNcasaforn(String ncasaforn) {
+        this.ncasaforn = ncasaforn;
     }
 
     public String getForntel1() {
@@ -82,6 +132,7 @@ public class Fornecedor {
     public void setFornemail(String fornemail) {
         this.fornemail = fornemail;
     }
+
     
     
 }

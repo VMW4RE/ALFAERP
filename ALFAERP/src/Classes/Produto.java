@@ -9,30 +9,31 @@ import java.util.Date;
  * @author EMPRESA JUNIOR
  */
 public class Produto {
-    private String codigopro;
+    private Long codigopro;
     private String nomepro;
+    private String descripro;
     private double preuncomppro;
     private double preunvendpro;
     private String fornpro;
     private Date   dtfbpro;
     private Date   dtvapro;
 
-    public Produto(String codigopro, String nomepro, double preuncomppro, double preunvendpro, String fornpro, Date dtfbpro, Date dtvapro) {
+    public Produto(Long codigopro, String nomepro, String descripro, double preuncomppro, double preunvendpro, String fornpro, Date dtfbpro, Date dtvapro) {
         this.codigopro = codigopro;
         this.nomepro = nomepro;
+        this.descripro = descripro;
         this.preuncomppro = preuncomppro;
         this.preunvendpro = preunvendpro;
         this.fornpro = fornpro;
         this.dtfbpro = dtfbpro;
         this.dtvapro = dtvapro;
-        
     }
 
-    public String getCodigopro() {
+    public Long getCodigopro() {
         return codigopro;
     }
 
-    public void setCodigopro(String codigopro) {
+    public void setCodigopro(Long codigopro) {
         this.codigopro = codigopro;
     }
 
@@ -42,6 +43,14 @@ public class Produto {
 
     public void setNomepro(String nomepro) {
         this.nomepro = nomepro;
+    }
+
+    public String getDescripro() {
+        return descripro;
+    }
+
+    public void setDescripro(String descripro) {
+        this.descripro = descripro;
     }
 
     public double getPreuncomppro() {
@@ -84,6 +93,9 @@ public class Produto {
         this.dtvapro = dtvapro;
     }
 
+    
+
+    
     
     
     

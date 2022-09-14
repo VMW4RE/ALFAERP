@@ -9,31 +9,39 @@ package Classes;
  * @author EMPRESA JUNIOR
  */
 public class Cliente {
-    private String codigocli;
+    private Long codigocli;
     private String nomecli;
-    private String cpfcli;
     private String cnpfcli;
-    private String endecli;
+    private String ruacli;
+    private String cidadecli;
+    private String estadocli;
+    private String cepcli;
+    private String bairrocli;
+    private String ncasacli;
     private String telcli1;
     private String telcli2;
     private String emailcli;
 
-    public Cliente(String codigocli, String nomecli, String cpfcli, String cnpfcli, String endecli, String telcli1, String telcli2, String emailcli) {
+    public Cliente(Long codigocli, String nomecli, String cnpfcli, String ruacli, String cidadecli, String estadocli, String cepcli, String bairrocli, String ncasacli, String telcli1, String telcli2, String emailcli) {
         this.codigocli = codigocli;
         this.nomecli = nomecli;
-        this.cpfcli = cpfcli;
         this.cnpfcli = cnpfcli;
-        this.endecli = endecli;
+        this.ruacli = ruacli;
+        this.cidadecli = cidadecli;
+        this.estadocli = estadocli;
+        this.cepcli = cepcli;
+        this.bairrocli = bairrocli;
+        this.ncasacli = ncasacli;
         this.telcli1 = telcli1;
         this.telcli2 = telcli2;
         this.emailcli = emailcli;
     }
 
-    public String getCodigocli() {
+    public Long getCodigocli() {
         return codigocli;
     }
 
-    public void setCodigocli(String codigocli) {
+    public void setCodigocli(Long codigocli) {
         this.codigocli = codigocli;
     }
 
@@ -45,14 +53,6 @@ public class Cliente {
         this.nomecli = nomecli;
     }
 
-    public String getCpfcli() {
-        return cpfcli;
-    }
-
-    public void setCpfcli(String cpfcli) {
-        this.cpfcli = cpfcli;
-    }
-
     public String getCnpfcli() {
         return cnpfcli;
     }
@@ -61,12 +61,52 @@ public class Cliente {
         this.cnpfcli = cnpfcli;
     }
 
-    public String getEndecli() {
-        return endecli;
+    public String getRuacli() {
+        return ruacli;
     }
 
-    public void setEndecli(String endecli) {
-        this.endecli = endecli;
+    public void setRuacli(String ruacli) {
+        this.ruacli = ruacli;
+    }
+
+    public String getCidadecli() {
+        return cidadecli;
+    }
+
+    public void setCidadecli(String cidadecli) {
+        this.cidadecli = cidadecli;
+    }
+
+    public String getEstadocli() {
+        return estadocli;
+    }
+
+    public void setEstadocli(String estadocli) {
+        this.estadocli = estadocli;
+    }
+
+    public String getCepcli() {
+        return cepcli;
+    }
+
+    public void setCepcli(String cepcli) {
+        this.cepcli = cepcli;
+    }
+
+    public String getBairrocli() {
+        return bairrocli;
+    }
+
+    public void setBairrocli(String bairrocli) {
+        this.bairrocli = bairrocli;
+    }
+
+    public String getNcasacli() {
+        return ncasacli;
+    }
+
+    public void setNcasacli(String ncasacli) {
+        this.ncasacli = ncasacli;
     }
 
     public String getTelcli1() {
@@ -92,9 +132,7 @@ public class Cliente {
     public void setEmailcli(String emailcli) {
         this.emailcli = emailcli;
     }
+
     
-    
-    
-    
-    
+
 }
