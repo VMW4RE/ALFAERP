@@ -11,7 +11,7 @@ import java.util.Date;
  * @author EMPRESA JUNIOR
  */
 public class Funcionario {
-    private String codigofunc;
+    private Long codigofunc;
     private String nomefunc;
     private String rgfunc;
     private String cpffunc;
@@ -19,12 +19,18 @@ public class Funcionario {
     private String admissaofunc;
     private String cargofunc;
     private String telefonefunc;
-    private String enderecofunc;
+    private String telefonefunc2;
+    private String ruafunc;
+    private String cidadefunc;
+    private String estadofunc;
+    private String cepfunc;
+    private String bairrofunc;
+    private String ncasafunc;
     private String loginfunc;
     private String senhafunc;
     private Date   dtdemfunc;
 
-    public Funcionario(String codigofunc, String nomefunc, String rgfunc, String cpffunc, String ctfunc, String admissaofunc, String cargofunc, String telefonefunc, String enderecofunc, String loginfunc, String senhafunc, Date dtdemfunc) {
+    public Funcionario(Long codigofunc, String nomefunc, String rgfunc, String cpffunc, String ctfunc, String admissaofunc, String cargofunc, String telefonefunc, String telefonefunc2, String ruafunc, String cidadefunc, String estadofunc, String cepfunc, String bairrofunc, String ncasafunc, String loginfunc, String senhafunc, Date dtdemfunc) {
         this.codigofunc = codigofunc;
         this.nomefunc = nomefunc;
         this.rgfunc = rgfunc;
@@ -33,17 +39,23 @@ public class Funcionario {
         this.admissaofunc = admissaofunc;
         this.cargofunc = cargofunc;
         this.telefonefunc = telefonefunc;
-        this.enderecofunc = enderecofunc;
+        this.telefonefunc2 = telefonefunc2;
+        this.ruafunc = ruafunc;
+        this.cidadefunc = cidadefunc;
+        this.estadofunc = estadofunc;
+        this.cepfunc = cepfunc;
+        this.bairrofunc = bairrofunc;
+        this.ncasafunc = ncasafunc;
         this.loginfunc = loginfunc;
         this.senhafunc = senhafunc;
         this.dtdemfunc = dtdemfunc;
     }
 
-    public String getCodigofunc() {
+    public Long getCodigofunc() {
         return codigofunc;
     }
 
-    public void setCodigofunc(String codigofunc) {
+    public void setCodigofunc(Long codigofunc) {
         this.codigofunc = codigofunc;
     }
 
@@ -103,12 +115,60 @@ public class Funcionario {
         this.telefonefunc = telefonefunc;
     }
 
-    public String getEnderecofunc() {
-        return enderecofunc;
+    public String getTelefonefunc2() {
+        return telefonefunc2;
     }
 
-    public void setEnderecofunc(String enderecofunc) {
-        this.enderecofunc = enderecofunc;
+    public void setTelefonefunc2(String telefonefunc2) {
+        this.telefonefunc2 = telefonefunc2;
+    }
+
+    public String getRuafunc() {
+        return ruafunc;
+    }
+
+    public void setRuafunc(String ruafunc) {
+        this.ruafunc = ruafunc;
+    }
+
+    public String getCidadefunc() {
+        return cidadefunc;
+    }
+
+    public void setCidadefunc(String cidadefunc) {
+        this.cidadefunc = cidadefunc;
+    }
+
+    public String getEstadofunc() {
+        return estadofunc;
+    }
+
+    public void setEstadofunc(String estadofunc) {
+        this.estadofunc = estadofunc;
+    }
+
+    public String getCepfunc() {
+        return cepfunc;
+    }
+
+    public void setCepfunc(String cepfunc) {
+        this.cepfunc = cepfunc;
+    }
+
+    public String getBairrofunc() {
+        return bairrofunc;
+    }
+
+    public void setBairrofunc(String bairrofunc) {
+        this.bairrofunc = bairrofunc;
+    }
+
+    public String getNcasafunc() {
+        return ncasafunc;
+    }
+
+    public void setNcasafunc(String ncasafunc) {
+        this.ncasafunc = ncasafunc;
     }
 
     public String getLoginfunc() {
@@ -134,10 +194,11 @@ public class Funcionario {
     public void setDtdemfunc(Date dtdemfunc) {
         this.dtdemfunc = dtdemfunc;
     }
- 
-    
+
     
 }
+
+   
      
      
   
