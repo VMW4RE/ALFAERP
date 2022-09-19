@@ -68,6 +68,11 @@ public class frmLogin extends javax.swing.JFrame {
         jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 277, 250, -1));
 
         txtUser.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUserActionPerformed(evt);
+            }
+        });
         jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 176, 250, -1));
 
         txtPass.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
@@ -132,6 +137,11 @@ public class frmLogin extends javax.swing.JFrame {
         frmmenu.setVisible(true);
     }//GEN-LAST:event_btnLoginActionPerformed
 
+    private void txtUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_txtUserActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -179,4 +189,7 @@ public class frmLogin extends javax.swing.JFrame {
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
+
+
 }
+
