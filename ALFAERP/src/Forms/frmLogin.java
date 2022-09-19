@@ -130,6 +130,7 @@ public class frmLogin extends javax.swing.JFrame {
         this.setVisible(false);
         frmmenu.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frmmenu.setVisible(true);
+        frmmenu.lblUser.setText("Victor");
     }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
