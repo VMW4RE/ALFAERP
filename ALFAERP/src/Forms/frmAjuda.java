@@ -8,12 +8,12 @@ package Forms;
  *
  * @author USUARIO
  */
-public class frmPDV extends javax.swing.JPanel {
+public class frmAjuda extends javax.swing.JPanel {
 
     /**
-     * Creates new form PDV
+     * Creates new form frmAjuda
      */
-    public frmPDV() {
+    public frmAjuda() {
         initComponents();
     }
 
@@ -26,21 +26,31 @@ public class frmPDV extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1 = new javax.swing.JLabel();
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel1.setText("SE FODE AI OTARIO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(168, 168, 168)
+                .addComponent(jLabel1)
+                .addContainerGap(216, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 540, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(194, 194, 194)
+                .addComponent(jLabel1)
+                .addContainerGap(298, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

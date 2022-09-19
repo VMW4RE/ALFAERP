@@ -4,15 +4,14 @@
  */
 package Forms;
 
+import java.awt.BorderLayout;
+
 /**
  *
  * @author USUARIO
  */
 public class frmMenu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form frmMenu
-     */
     public frmMenu() {
         initComponents();
     }
@@ -26,214 +25,237 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        btnSistema = new javax.swing.JButton();
+        btnCadastro = new javax.swing.JButton();
+        btnConsulta = new javax.swing.JButton();
+        btnRelatorio = new javax.swing.JButton();
+        btnCompra = new javax.swing.JButton();
+        btnEstoque = new javax.swing.JButton();
+        btnAjuda = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0));
-        jLabel1 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         lblUser = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        btnPDV = new javax.swing.JButton();
-        btnCad = new javax.swing.JButton();
-        btnCon = new javax.swing.JButton();
-        btnRel = new javax.swing.JButton();
-        btnEst = new javax.swing.JButton();
-        btnCom = new javax.swing.JButton();
-        btnHelp = new javax.swing.JButton();
-        painelDash = new javax.swing.JPanel();
+        pnlCenter = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setName("SISTEMA INTEGRADO DE GESTÃO COMERCIAL"); // NOI18N
         setPreferredSize(new java.awt.Dimension(900, 600));
 
-        jPanel1.setBackground(new java.awt.Color(0, 58, 77));
+        jPanel3.setBackground(new java.awt.Color(22, 90, 112));
+        jPanel3.setPreferredSize(new java.awt.Dimension(200, 600));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user-free-icon-font.png"))); // NOI18N
+        jPanel4.setBackground(new java.awt.Color(22, 90, 112));
+        jPanel4.setPreferredSize(new java.awt.Dimension(200, 100));
 
-        jLabel2.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Bem-Vindo,");
-
-        lblUser.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        lblUser.setForeground(new java.awt.Color(255, 255, 255));
-        lblUser.setText("Fulano");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblUser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel2)
-                                .addComponent(lblUser))
-                            .addComponent(jLabel1))))
-                .addContainerGap(16, Short.MAX_VALUE))
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        jPanel2.setBackground(new java.awt.Color(22, 90, 112));
+        jPanel3.add(jPanel4);
 
-        btnPDV.setBackground(new java.awt.Color(0, 58, 76));
-        btnPDV.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnPDV.setForeground(new java.awt.Color(255, 255, 255));
-        btnPDV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shopping-cart-free-icon-font.png"))); // NOI18N
-        btnPDV.setText("SISTEMA");
-        btnPDV.setBorder(null);
-        btnPDV.setBorderPainted(false);
-        btnPDV.setFocusable(false);
-        btnPDV.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnPDV.addActionListener(new java.awt.event.ActionListener() {
+        btnSistema.setBackground(new java.awt.Color(0, 58, 76));
+        btnSistema.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnSistema.setForeground(new java.awt.Color(255, 255, 255));
+        btnSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shopping-cart-free-icon-font.png"))); // NOI18N
+        btnSistema.setText("SISTEMA");
+        btnSistema.setBorder(null);
+        btnSistema.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSistema.setFocusPainted(false);
+        btnSistema.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnSistema.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPDVActionPerformed(evt);
+                btnSistemaActionPerformed(evt);
             }
         });
+        jPanel3.add(btnSistema);
 
-        btnCad.setBackground(new java.awt.Color(0, 58, 76));
-        btnCad.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnCad.setForeground(new java.awt.Color(255, 255, 255));
-        btnCad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add-free-icon-font.png"))); // NOI18N
-        btnCad.setText("CADASTRO");
-        btnCad.setBorder(null);
-        btnCad.setBorderPainted(false);
-        btnCad.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnCad.setFocusable(false);
+        btnCadastro.setBackground(new java.awt.Color(0, 58, 76));
+        btnCadastro.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnCadastro.setForeground(new java.awt.Color(255, 255, 255));
+        btnCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add-free-icon-font.png"))); // NOI18N
+        btnCadastro.setText("CADASTRO");
+        btnCadastro.setBorder(null);
+        btnCadastro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCadastro.setFocusPainted(false);
+        btnCadastro.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnCadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastroActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnCadastro);
 
-        btnCon.setBackground(new java.awt.Color(0, 58, 76));
-        btnCon.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnCon.setForeground(new java.awt.Color(255, 255, 255));
-        btnCon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-free-icon-font.png"))); // NOI18N
-        btnCon.setText("CONSULTA");
-        btnCon.setBorder(null);
-        btnCon.setBorderPainted(false);
-        btnCon.setFocusable(false);
+        btnConsulta.setBackground(new java.awt.Color(0, 58, 76));
+        btnConsulta.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnConsulta.setForeground(new java.awt.Color(255, 255, 255));
+        btnConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-free-icon-font.png"))); // NOI18N
+        btnConsulta.setText("CONSULTA");
+        btnConsulta.setBorder(null);
+        btnConsulta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnConsulta.setFocusPainted(false);
+        btnConsulta.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnConsulta);
 
-        btnRel.setBackground(new java.awt.Color(0, 58, 76));
-        btnRel.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnRel.setForeground(new java.awt.Color(255, 255, 255));
-        btnRel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/document-free-icon-font.png"))); // NOI18N
-        btnRel.setText("RELATÓRIOS");
-        btnRel.setBorder(null);
-        btnRel.setBorderPainted(false);
-        btnRel.setFocusable(false);
+        btnRelatorio.setBackground(new java.awt.Color(0, 58, 76));
+        btnRelatorio.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnRelatorio.setForeground(new java.awt.Color(255, 255, 255));
+        btnRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/document-free-icon-font.png"))); // NOI18N
+        btnRelatorio.setText("RELATÓRIOS");
+        btnRelatorio.setBorder(null);
+        btnRelatorio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRelatorio.setFocusPainted(false);
+        btnRelatorio.setPreferredSize(new java.awt.Dimension(200, 50));
+        jPanel3.add(btnRelatorio);
 
-        btnEst.setBackground(new java.awt.Color(0, 58, 76));
-        btnEst.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnEst.setForeground(new java.awt.Color(255, 255, 255));
-        btnEst.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boxes-free-icon-font.png"))); // NOI18N
-        btnEst.setText("ESTOQUE");
-        btnEst.setBorder(null);
-        btnEst.setBorderPainted(false);
-        btnEst.setFocusable(false);
+        btnCompra.setBackground(new java.awt.Color(0, 58, 76));
+        btnCompra.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnCompra.setForeground(new java.awt.Color(255, 255, 255));
+        btnCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/truck-loading-free-icon-font.png"))); // NOI18N
+        btnCompra.setText("COMPRAS");
+        btnCompra.setBorder(null);
+        btnCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCompra.setFocusPainted(false);
+        btnCompra.setPreferredSize(new java.awt.Dimension(200, 50));
+        jPanel3.add(btnCompra);
 
-        btnCom.setBackground(new java.awt.Color(0, 58, 76));
-        btnCom.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnCom.setForeground(new java.awt.Color(255, 255, 255));
-        btnCom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/truck-loading-free-icon-font.png"))); // NOI18N
-        btnCom.setText("COMPRAS");
-        btnCom.setBorder(null);
-        btnCom.setBorderPainted(false);
-        btnCom.setFocusable(false);
+        btnEstoque.setBackground(new java.awt.Color(0, 58, 76));
+        btnEstoque.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnEstoque.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boxes-free-icon-font.png"))); // NOI18N
+        btnEstoque.setText("ESTOQUE");
+        btnEstoque.setBorder(null);
+        btnEstoque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEstoque.setFocusPainted(false);
+        btnEstoque.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstoqueActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnEstoque);
 
-        btnHelp.setBackground(new java.awt.Color(0, 58, 76));
-        btnHelp.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnHelp.setForeground(new java.awt.Color(255, 255, 255));
-        btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/interrogation-free-icon-font.png"))); // NOI18N
-        btnHelp.setText("AJUDA");
-        btnHelp.setBorder(null);
-        btnHelp.setBorderPainted(false);
-        btnHelp.setFocusable(false);
+        btnAjuda.setBackground(new java.awt.Color(0, 58, 76));
+        btnAjuda.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnAjuda.setForeground(new java.awt.Color(255, 255, 255));
+        btnAjuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/interrogation-free-icon-font.png"))); // NOI18N
+        btnAjuda.setText("AJUDA");
+        btnAjuda.setBorder(null);
+        btnAjuda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAjuda.setFocusPainted(false);
+        btnAjuda.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnAjuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAjudaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnAjuda);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnPDV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnCad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnCon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnRel, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
-            .addComponent(btnEst, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnCom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnHelp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(btnPDV, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCad, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCon, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnRel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnEst, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCom, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(101, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel3, java.awt.BorderLayout.WEST);
 
-        painelDash.setBackground(new java.awt.Color(255, 255, 255));
-        painelDash.setPreferredSize(new java.awt.Dimension(900, 500));
+        jPanel1.setBackground(new java.awt.Color(0, 58, 77));
+        jPanel1.setPreferredSize(new java.awt.Dimension(50, 60));
+        jPanel1.setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout painelDashLayout = new javax.swing.GroupLayout(painelDash);
-        painelDash.setLayout(painelDashLayout);
-        painelDashLayout.setHorizontalGroup(
-            painelDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 706, Short.MAX_VALUE)
-        );
-        painelDashLayout.setVerticalGroup(
-            painelDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jPanel5.setBackground(new java.awt.Color(0, 58, 77));
+        jPanel5.setPreferredSize(new java.awt.Dimension(200, 60));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(painelDash, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE))
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(painelDash, javax.swing.GroupLayout.DEFAULT_SIZE, 552, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fonte-de-icone-de-user-gratis.png"))); // NOI18N
+        jLabel2.setPreferredSize(new java.awt.Dimension(50, 60));
+        jPanel5.add(jLabel2);
+
+        jLabel3.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Olá,");
+        jPanel5.add(jLabel3);
+
+        lblUser.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        lblUser.setForeground(new java.awt.Color(255, 255, 255));
+        lblUser.setText("Fulano");
+        jPanel5.add(lblUser);
+
+        jPanel1.add(jPanel5, java.awt.BorderLayout.WEST);
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
+
+        pnlCenter.setBackground(new java.awt.Color(255, 255, 255));
+        pnlCenter.setLayout(new java.awt.BorderLayout());
+        getContentPane().add(pnlCenter, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPDVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPDVActionPerformed
+    private void btnSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaActionPerformed
+        // TODO add your handling code here:
+        frmPDV pdv = new frmPDV();
         
+        pnlCenter.removeAll();
+        pnlCenter.add(pdv, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+    }//GEN-LAST:event_btnSistemaActionPerformed
+
+    private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroActionPerformed
+        // TODO add your handling code here:
+        frmCadGeral cadgeral = new frmCadGeral();
         
-    }//GEN-LAST:event_btnPDVActionPerformed
+        pnlCenter.removeAll();
+        pnlCenter.add(cadgeral, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+        pnlCenter.setVisible(true);
+    }//GEN-LAST:event_btnCadastroActionPerformed
+
+    private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
+        // TODO add your handling code here:
+        frmConsulta consulta = new frmConsulta();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(consulta, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+        pnlCenter.setVisible(true);
+        
+    }//GEN-LAST:event_btnConsultaActionPerformed
+
+    private void btnEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstoqueActionPerformed
+        // TODO add your handling code here:
+        frmEstoque estoque = new frmEstoque();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(estoque, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+        pnlCenter.setVisible(true);
+        
+    }//GEN-LAST:event_btnEstoqueActionPerformed
+
+    private void btnAjudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjudaActionPerformed
+        // TODO add your handling code here:
+        frmAjuda ajuda = new frmAjuda();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(ajuda, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+        pnlCenter.setVisible(true);
+    }//GEN-LAST:event_btnAjudaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -271,19 +293,20 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCad;
-    private javax.swing.JButton btnCom;
-    private javax.swing.JButton btnCon;
-    private javax.swing.JButton btnEst;
-    private javax.swing.JButton btnHelp;
-    private javax.swing.JButton btnPDV;
-    private javax.swing.JButton btnRel;
-    private javax.swing.Box.Filler filler1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnAjuda;
+    private javax.swing.JButton btnCadastro;
+    private javax.swing.JButton btnCompra;
+    private javax.swing.JButton btnConsulta;
+    private javax.swing.JButton btnEstoque;
+    private javax.swing.JButton btnRelatorio;
+    private javax.swing.JButton btnSistema;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lblUser;
-    private javax.swing.JPanel painelDash;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    public javax.swing.JLabel lblUser;
+    public javax.swing.JPanel pnlCenter;
     // End of variables declaration//GEN-END:variables
 }

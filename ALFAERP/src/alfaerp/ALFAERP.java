@@ -1,5 +1,6 @@
 package alfaerp;
 
+import Forms.frmCadCli;
 import Forms.frmLogin;
 
 public class ALFAERP {
