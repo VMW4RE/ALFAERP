@@ -1,6 +1,5 @@
 package alfaerp;
 
-import Forms.frmCadCli;
 import Forms.frmLogin;
 
 public class ALFAERP {
@@ -9,6 +8,8 @@ public class ALFAERP {
         frmLogin Login = new frmLogin();
         Login.setLocationRelativeTo(null);
         Login.setVisible(true);
+        
     }
     
 }
+
