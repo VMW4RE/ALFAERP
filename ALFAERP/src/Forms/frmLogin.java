@@ -30,96 +30,87 @@ public class frmLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btnForgot = new javax.swing.JButton();
-        btnLogin = new javax.swing.JButton();
-        txtUser = new javax.swing.JTextField();
-        txtPass = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        btnClose = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        txtUser = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        txtPass = new javax.swing.JPasswordField();
+        btnLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
-        setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(310, 350));
         setResizable(false);
-        setSize(new java.awt.Dimension(310, 350));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(22, 90, 112));
 
-        btnForgot.setFont(new java.awt.Font("Abel", 0, 14)); // NOI18N
-        btnForgot.setText("Esqueceu sua senha?");
-        btnForgot.setBorder(null);
-        btnForgot.setBorderPainted(false);
-        jPanel1.add(btnForgot, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 319, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lock-free-icon-font.png"))); // NOI18N
 
-        btnLogin.setBackground(new java.awt.Color(0, 58, 76));
-        btnLogin.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Usuário");
+
+        txtUser.setBorder(null);
+
+        jLabel2.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Senha");
+
+        txtPass.setBorder(null);
+
+        btnLogin.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(0, 58, 76));
         btnLogin.setText("LOGIN");
+        btnLogin.setBorder(null);
+        btnLogin.setBorderPainted(false);
+        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLogin.setFocusPainted(false);
+        btnLogin.setFocusable(false);
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 277, 250, -1));
 
-        txtUser.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        txtUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUserActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 176, 250, -1));
-
-        txtPass.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 235, 250, -1));
-
-        jLabel1.setFont(new java.awt.Font("Abel", 0, 14)); // NOI18N
-        jLabel1.setText("SENHA");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 212, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Abel", 0, 14)); // NOI18N
-        jLabel2.setText("USUÁRIO");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 151, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        jLabel3.setText("LOGIN");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 113, -1, -1));
-
-        btnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/x-free-icon-font.png"))); // NOI18N
-        btnClose.setBorder(null);
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 6, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lock-free-icon-font.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 27, -1, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel1)
+                            .addComponent(txtUser, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtPass)
+                            .addComponent(btnLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel3)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addGap(0, 0, 0)
+                .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel2)
+                .addGap(0, 0, 0)
+                .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(56, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
@@ -135,13 +126,7 @@ public class frmLogin extends javax.swing.JFrame {
         this.setVisible(false);
         frmmenu.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frmmenu.setVisible(true);
-        frmmenu.lblUser.setText("Victor");
     }//GEN-LAST:event_btnLoginActionPerformed
-
-    private void txtUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_txtUserActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,18 +164,12 @@ public class frmLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClose;
-    private javax.swing.JButton btnForgot;
     private javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
-
-
 }
-

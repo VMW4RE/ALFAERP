@@ -14,6 +14,6 @@ public class FuncionarioDAO {
     
     
     public void CadastroFunc(Funcionario funcionario){
-        
+
     }
 }

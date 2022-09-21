@@ -12,6 +12,9 @@ import java.awt.BorderLayout;
  */
 public class frmMenu extends javax.swing.JFrame {
 
+    /**
+     * Creates new form frmMenu2
+     */
     public frmMenu() {
         initComponents();
     }
@@ -25,174 +28,141 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        btnSistema = new javax.swing.JButton();
-        btnCadastro = new javax.swing.JButton();
-        btnConsulta = new javax.swing.JButton();
-        btnRelatorio = new javax.swing.JButton();
-        btnCompra = new javax.swing.JButton();
+        pnlTop = new javax.swing.JPanel();
+        btnCaixa = new javax.swing.JButton();
+        btnClientes = new javax.swing.JButton();
+        btnProdutos = new javax.swing.JButton();
+        btnRelatorios = new javax.swing.JButton();
+        btnCompras = new javax.swing.JButton();
         btnEstoque = new javax.swing.JButton();
-        btnAjuda = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        lblUser = new javax.swing.JLabel();
         pnlCenter = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
-        setName("SISTEMA INTEGRADO DE GESTÃO COMERCIAL"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(900, 600));
-
-        jPanel3.setBackground(new java.awt.Color(22, 90, 112));
-        jPanel3.setPreferredSize(new java.awt.Dimension(200, 600));
-
-        jPanel4.setBackground(new java.awt.Color(22, 90, 112));
-        jPanel4.setPreferredSize(new java.awt.Dimension(200, 100));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        jPanel3.add(jPanel4);
-
-        btnSistema.setBackground(new java.awt.Color(0, 58, 76));
-        btnSistema.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnSistema.setForeground(new java.awt.Color(255, 255, 255));
-        btnSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shopping-cart-free-icon-font.png"))); // NOI18N
-        btnSistema.setText("SISTEMA");
-        btnSistema.setBorder(null);
-        btnSistema.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSistema.setFocusPainted(false);
-        btnSistema.setPreferredSize(new java.awt.Dimension(200, 50));
-        btnSistema.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSistemaActionPerformed(evt);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
             }
         });
-        jPanel3.add(btnSistema);
 
-        btnCadastro.setBackground(new java.awt.Color(0, 58, 76));
-        btnCadastro.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnCadastro.setForeground(new java.awt.Color(255, 255, 255));
-        btnCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add-free-icon-font.png"))); // NOI18N
-        btnCadastro.setText("CADASTRO");
-        btnCadastro.setBorder(null);
-        btnCadastro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnCadastro.setFocusPainted(false);
-        btnCadastro.setPreferredSize(new java.awt.Dimension(200, 50));
-        btnCadastro.addActionListener(new java.awt.event.ActionListener() {
+        pnlTop.setBackground(new java.awt.Color(0, 58, 77));
+        pnlTop.setPreferredSize(new java.awt.Dimension(900, 100));
+        pnlTop.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
+        btnCaixa.setBackground(new java.awt.Color(0, 58, 77));
+        btnCaixa.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnCaixa.setForeground(new java.awt.Color(255, 255, 255));
+        btnCaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/cash-register-free-icon-font.png"))); // NOI18N
+        btnCaixa.setText("Caixa");
+        btnCaixa.setBorder(null);
+        btnCaixa.setBorderPainted(false);
+        btnCaixa.setFocusPainted(false);
+        btnCaixa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCaixa.setIconTextGap(5);
+        btnCaixa.setPreferredSize(new java.awt.Dimension(100, 100));
+        btnCaixa.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCaixa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCadastroActionPerformed(evt);
+                btnCaixaActionPerformed(evt);
             }
         });
-        jPanel3.add(btnCadastro);
+        pnlTop.add(btnCaixa);
 
-        btnConsulta.setBackground(new java.awt.Color(0, 58, 76));
-        btnConsulta.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnConsulta.setForeground(new java.awt.Color(255, 255, 255));
-        btnConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-free-icon-font.png"))); // NOI18N
-        btnConsulta.setText("CONSULTA");
-        btnConsulta.setBorder(null);
-        btnConsulta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnConsulta.setFocusPainted(false);
-        btnConsulta.setPreferredSize(new java.awt.Dimension(200, 50));
-        btnConsulta.addActionListener(new java.awt.event.ActionListener() {
+        btnClientes.setBackground(new java.awt.Color(0, 58, 77));
+        btnClientes.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnClientes.setForeground(new java.awt.Color(255, 255, 255));
+        btnClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/fonte-de-icone-de-user-gratis.png"))); // NOI18N
+        btnClientes.setText("Clientes");
+        btnClientes.setBorder(null);
+        btnClientes.setBorderPainted(false);
+        btnClientes.setFocusPainted(false);
+        btnClientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnClientes.setIconTextGap(5);
+        btnClientes.setPreferredSize(new java.awt.Dimension(100, 100));
+        btnClientes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnConsultaActionPerformed(evt);
+                btnClientesActionPerformed(evt);
             }
         });
-        jPanel3.add(btnConsulta);
+        pnlTop.add(btnClientes);
 
-        btnRelatorio.setBackground(new java.awt.Color(0, 58, 76));
-        btnRelatorio.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnRelatorio.setForeground(new java.awt.Color(255, 255, 255));
-        btnRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/document-free-icon-font.png"))); // NOI18N
-        btnRelatorio.setText("RELATÓRIOS");
-        btnRelatorio.setBorder(null);
-        btnRelatorio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRelatorio.setFocusPainted(false);
-        btnRelatorio.setPreferredSize(new java.awt.Dimension(200, 50));
-        jPanel3.add(btnRelatorio);
+        btnProdutos.setBackground(new java.awt.Color(0, 58, 77));
+        btnProdutos.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnProdutos.setForeground(new java.awt.Color(255, 255, 255));
+        btnProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/boxes-free-icon-font.png"))); // NOI18N
+        btnProdutos.setText("Produtos");
+        btnProdutos.setBorder(null);
+        btnProdutos.setBorderPainted(false);
+        btnProdutos.setFocusPainted(false);
+        btnProdutos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnProdutos.setIconTextGap(5);
+        btnProdutos.setPreferredSize(new java.awt.Dimension(100, 100));
+        btnProdutos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnProdutos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProdutosActionPerformed(evt);
+            }
+        });
+        pnlTop.add(btnProdutos);
 
-        btnCompra.setBackground(new java.awt.Color(0, 58, 76));
-        btnCompra.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnCompra.setForeground(new java.awt.Color(255, 255, 255));
-        btnCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/truck-loading-free-icon-font.png"))); // NOI18N
-        btnCompra.setText("COMPRAS");
-        btnCompra.setBorder(null);
-        btnCompra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnCompra.setFocusPainted(false);
-        btnCompra.setPreferredSize(new java.awt.Dimension(200, 50));
-        jPanel3.add(btnCompra);
+        btnRelatorios.setBackground(new java.awt.Color(0, 58, 77));
+        btnRelatorios.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnRelatorios.setForeground(new java.awt.Color(255, 255, 255));
+        btnRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/document-free-icon-font.png"))); // NOI18N
+        btnRelatorios.setText("Relatórios");
+        btnRelatorios.setBorder(null);
+        btnRelatorios.setBorderPainted(false);
+        btnRelatorios.setFocusPainted(false);
+        btnRelatorios.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnRelatorios.setIconTextGap(5);
+        btnRelatorios.setPreferredSize(new java.awt.Dimension(100, 100));
+        btnRelatorios.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnRelatorios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRelatoriosActionPerformed(evt);
+            }
+        });
+        pnlTop.add(btnRelatorios);
 
-        btnEstoque.setBackground(new java.awt.Color(0, 58, 76));
-        btnEstoque.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        btnCompras.setBackground(new java.awt.Color(0, 58, 77));
+        btnCompras.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnCompras.setForeground(new java.awt.Color(255, 255, 255));
+        btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/truck-loading-free-icon-font.png"))); // NOI18N
+        btnCompras.setText("Compras");
+        btnCompras.setBorder(null);
+        btnCompras.setBorderPainted(false);
+        btnCompras.setFocusPainted(false);
+        btnCompras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCompras.setIconTextGap(5);
+        btnCompras.setPreferredSize(new java.awt.Dimension(100, 100));
+        btnCompras.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCompras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprasActionPerformed(evt);
+            }
+        });
+        pnlTop.add(btnCompras);
+
+        btnEstoque.setBackground(new java.awt.Color(0, 58, 77));
+        btnEstoque.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         btnEstoque.setForeground(new java.awt.Color(255, 255, 255));
-        btnEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boxes-free-icon-font.png"))); // NOI18N
-        btnEstoque.setText("ESTOQUE");
+        btnEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/boxes-free-icon-font.png"))); // NOI18N
+        btnEstoque.setText("Estoque");
         btnEstoque.setBorder(null);
-        btnEstoque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEstoque.setBorderPainted(false);
         btnEstoque.setFocusPainted(false);
-        btnEstoque.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnEstoque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEstoque.setIconTextGap(5);
+        btnEstoque.setPreferredSize(new java.awt.Dimension(100, 100));
+        btnEstoque.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnEstoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEstoqueActionPerformed(evt);
             }
         });
-        jPanel3.add(btnEstoque);
+        pnlTop.add(btnEstoque);
 
-        btnAjuda.setBackground(new java.awt.Color(0, 58, 76));
-        btnAjuda.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        btnAjuda.setForeground(new java.awt.Color(255, 255, 255));
-        btnAjuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/interrogation-free-icon-font.png"))); // NOI18N
-        btnAjuda.setText("AJUDA");
-        btnAjuda.setBorder(null);
-        btnAjuda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAjuda.setFocusPainted(false);
-        btnAjuda.setPreferredSize(new java.awt.Dimension(200, 50));
-        btnAjuda.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAjudaActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btnAjuda);
-
-        getContentPane().add(jPanel3, java.awt.BorderLayout.WEST);
-
-        jPanel1.setBackground(new java.awt.Color(0, 58, 77));
-        jPanel1.setPreferredSize(new java.awt.Dimension(50, 60));
-        jPanel1.setLayout(new java.awt.BorderLayout());
-
-        jPanel5.setBackground(new java.awt.Color(0, 58, 77));
-        jPanel5.setPreferredSize(new java.awt.Dimension(200, 60));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fonte-de-icone-de-user-gratis.png"))); // NOI18N
-        jLabel2.setPreferredSize(new java.awt.Dimension(50, 60));
-        jPanel5.add(jLabel2);
-
-        jLabel3.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Olá,");
-        jPanel5.add(jLabel3);
-
-        lblUser.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
-        lblUser.setForeground(new java.awt.Color(255, 255, 255));
-        lblUser.setText("Fulano");
-        jPanel5.add(lblUser);
-
-        jPanel1.add(jPanel5, java.awt.BorderLayout.WEST);
-
-        getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
+        getContentPane().add(pnlTop, java.awt.BorderLayout.NORTH);
 
         pnlCenter.setBackground(new java.awt.Color(255, 255, 255));
         pnlCenter.setLayout(new java.awt.BorderLayout());
@@ -201,61 +171,71 @@ public class frmMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaActionPerformed
+    private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
+        // TODO add your handling code here:
+        frmMenucli menucli = new frmMenucli();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(menucli, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+        
+    }//GEN-LAST:event_btnClientesActionPerformed
+
+    private void btnProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProdutosActionPerformed
+        // TODO add your handling code here:
+        frmMenupro menupro = new frmMenupro();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(menupro, BorderLayout.CENTER);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+    }//GEN-LAST:event_btnProdutosActionPerformed
+
+    private void btnCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaixaActionPerformed
         // TODO add your handling code here:
         frmPDV pdv = new frmPDV();
         
         pnlCenter.removeAll();
-        pnlCenter.add(pdv, BorderLayout.CENTER);
+        pnlCenter.add(pdv);
         pnlCenter.revalidate();
         pnlCenter.repaint();
-    }//GEN-LAST:event_btnSistemaActionPerformed
+    }//GEN-LAST:event_btnCaixaActionPerformed
 
-    private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroActionPerformed
+    private void btnRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRelatoriosActionPerformed
         // TODO add your handling code here:
-        frmCadGeral cadgeral = new frmCadGeral();
+        frmMenurela menurel = new frmMenurela();
         
         pnlCenter.removeAll();
-        pnlCenter.add(cadgeral, BorderLayout.CENTER);
+        pnlCenter.add(menurel, BorderLayout.CENTER);
         pnlCenter.revalidate();
         pnlCenter.repaint();
-        pnlCenter.setVisible(true);
-    }//GEN-LAST:event_btnCadastroActionPerformed
+    }//GEN-LAST:event_btnRelatoriosActionPerformed
 
-    private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
+    private void btnComprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprasActionPerformed
         // TODO add your handling code here:
-        frmConsulta consulta = new frmConsulta();
+        frmMenucompra menucom = new frmMenucompra();
         
         pnlCenter.removeAll();
-        pnlCenter.add(consulta, BorderLayout.CENTER);
+        pnlCenter.add(menucom, BorderLayout.CENTER);
         pnlCenter.revalidate();
         pnlCenter.repaint();
-        pnlCenter.setVisible(true);
-        
-    }//GEN-LAST:event_btnConsultaActionPerformed
+    }//GEN-LAST:event_btnComprasActionPerformed
 
     private void btnEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstoqueActionPerformed
         // TODO add your handling code here:
-        frmEstoque estoque = new frmEstoque();
+        frmMenuestoque menuestq = new frmMenuestoque();
         
         pnlCenter.removeAll();
-        pnlCenter.add(estoque, BorderLayout.CENTER);
+        pnlCenter.add(menuestq, BorderLayout.CENTER);
         pnlCenter.revalidate();
         pnlCenter.repaint();
-        pnlCenter.setVisible(true);
-        
     }//GEN-LAST:event_btnEstoqueActionPerformed
 
-    private void btnAjudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjudaActionPerformed
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        frmAjuda ajuda = new frmAjuda();
         
-        pnlCenter.removeAll();
-        pnlCenter.add(ajuda, BorderLayout.CENTER);
-        pnlCenter.revalidate();
-        pnlCenter.repaint();
-        pnlCenter.setVisible(true);
-    }//GEN-LAST:event_btnAjudaActionPerformed
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -283,6 +263,7 @@ public class frmMenu extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(frmMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -293,20 +274,13 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAjuda;
-    private javax.swing.JButton btnCadastro;
-    private javax.swing.JButton btnCompra;
-    private javax.swing.JButton btnConsulta;
+    private javax.swing.JButton btnCaixa;
+    private javax.swing.JButton btnClientes;
+    private javax.swing.JButton btnCompras;
     private javax.swing.JButton btnEstoque;
-    private javax.swing.JButton btnRelatorio;
-    private javax.swing.JButton btnSistema;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    public javax.swing.JLabel lblUser;
-    public javax.swing.JPanel pnlCenter;
+    private javax.swing.JButton btnProdutos;
+    private javax.swing.JButton btnRelatorios;
+    private javax.swing.JPanel pnlCenter;
+    private javax.swing.JPanel pnlTop;
     // End of variables declaration//GEN-END:variables
 }
