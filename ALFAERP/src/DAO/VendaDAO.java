@@ -2,18 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Conexão;
-
-import Classes.Funcionario;
+package DAO;
 
 /**
  *
  * @author EMPRESA JUNIOR
  */
-public class FuncionarioDAO {
+public class VendaDAO {
     
-    
-    public void CadastroFunc(Funcionario funcionario){
-        String sql 
-    }
 }

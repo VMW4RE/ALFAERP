@@ -9,7 +9,7 @@ package Classes;
  * @author EMPRESA JUNIOR
  */
 public class Cliente {
-    private Long codigocli;
+    private int codigocli;
     private String nomecli;
     private String cnpfcli;
     private String ruacli;
@@ -21,8 +21,12 @@ public class Cliente {
     private String telcli1;
     private String telcli2;
     private String emailcli;
+    
+    public Cliente(){
+        
+    }
 
-    public Cliente(Long codigocli, String nomecli, String cnpfcli, String ruacli, String cidadecli, String estadocli, String cepcli, String bairrocli, String ncasacli, String telcli1, String telcli2, String emailcli) {
+    public Cliente(int codigocli, String nomecli, String cnpfcli, String ruacli, String cidadecli, String estadocli, String cepcli, String bairrocli, String ncasacli, String telcli1, String telcli2, String emailcli) {
         this.codigocli = codigocli;
         this.nomecli = nomecli;
         this.cnpfcli = cnpfcli;
@@ -37,11 +41,11 @@ public class Cliente {
         this.emailcli = emailcli;
     }
 
-    public Long getCodigocli() {
+    public int getCodigocli() {
         return codigocli;
     }
 
-    public void setCodigocli(Long codigocli) {
+    public void setCodigocli(int codigocli) {
         this.codigocli = codigocli;
     }
 
@@ -133,6 +137,6 @@ public class Cliente {
         this.emailcli = emailcli;
     }
 
-    
+   
 
 }
