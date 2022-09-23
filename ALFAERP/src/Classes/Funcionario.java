@@ -29,6 +29,11 @@ public class Funcionario {
     private String loginfunc;
     private String senhafunc;
     private Date   dtdemfunc;
+    
+    
+    public Funcionario(){
+        
+    }
 
     public Funcionario(Long codigofunc, String nomefunc, String rgfunc, String cpffunc, String ctfunc, String admissaofunc, String cargofunc, String telefonefunc, String telefonefunc2, String ruafunc, String cidadefunc, String estadofunc, String cepfunc, String bairrofunc, String ncasafunc, String loginfunc, String senhafunc, Date dtdemfunc) {
         this.codigofunc = codigofunc;

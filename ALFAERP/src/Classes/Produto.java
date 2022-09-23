@@ -17,6 +17,11 @@ public class Produto {
     private String fornpro;
     private Date   dtfbpro;
     private Date   dtvapro;
+    
+    
+    public Produto(){
+        
+    }
 
     public Produto(Long codigopro, String nomepro, String descripro, double preuncomppro, double preunvendpro, String fornpro, Date dtfbpro, Date dtvapro) {
         this.codigopro = codigopro;

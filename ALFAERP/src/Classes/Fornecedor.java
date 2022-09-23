@@ -21,6 +21,11 @@ public class Fornecedor {
     private String forntel1;
     private String forntel2;
     private String fornemail;
+    
+    
+    public Fornecedor(){
+        
+    }
 
     public Fornecedor(Long codigoforn, String nomesocforn, String cnpfforn, String ruaforn, String cidadeforn, String estadoforn, String cepforn, String bairroforn, String ncasaforn, String forntel1, String forntel2, String fornemail) {
         this.codigoforn = codigoforn;
