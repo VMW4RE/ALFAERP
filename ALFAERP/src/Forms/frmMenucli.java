@@ -29,8 +29,7 @@ public class frmMenucli extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         btnNovoCli = new javax.swing.JButton();
-        btnAlterCli = new javax.swing.JButton();
-        btnRemCli = new javax.swing.JButton();
+        btnAlterCli1 = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         pnlCenter = new javax.swing.JPanel();
 
@@ -72,36 +71,23 @@ public class frmMenucli extends javax.swing.JPanel {
         });
         jPanel1.add(btnNovoCli);
 
-        btnAlterCli.setBackground(new java.awt.Color(0, 58, 77));
-        btnAlterCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        btnAlterCli.setForeground(new java.awt.Color(255, 255, 255));
-        btnAlterCli.setText("Alterar");
-        btnAlterCli.setBorder(null);
-        btnAlterCli.setBorderPainted(false);
-        btnAlterCli.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAlterCli.setFocusPainted(false);
-        btnAlterCli.setFocusable(false);
-        btnAlterCli.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnAlterCli.setPreferredSize(new java.awt.Dimension(200, 50));
-        btnAlterCli.addActionListener(new java.awt.event.ActionListener() {
+        btnAlterCli1.setBackground(new java.awt.Color(0, 58, 77));
+        btnAlterCli1.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnAlterCli1.setForeground(new java.awt.Color(255, 255, 255));
+        btnAlterCli1.setText("Consultar");
+        btnAlterCli1.setBorder(null);
+        btnAlterCli1.setBorderPainted(false);
+        btnAlterCli1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAlterCli1.setFocusPainted(false);
+        btnAlterCli1.setFocusable(false);
+        btnAlterCli1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAlterCli1.setPreferredSize(new java.awt.Dimension(200, 50));
+        btnAlterCli1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAlterCliActionPerformed(evt);
+                btnAlterCli1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAlterCli);
-
-        btnRemCli.setBackground(new java.awt.Color(0, 58, 77));
-        btnRemCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        btnRemCli.setForeground(new java.awt.Color(255, 255, 255));
-        btnRemCli.setText("Remover");
-        btnRemCli.setBorder(null);
-        btnRemCli.setBorderPainted(false);
-        btnRemCli.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRemCli.setFocusPainted(false);
-        btnRemCli.setFocusable(false);
-        btnRemCli.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnRemCli.setPreferredSize(new java.awt.Dimension(200, 50));
-        jPanel1.add(btnRemCli);
+        jPanel1.add(btnAlterCli1);
 
         btnClose.setBackground(new java.awt.Color(0, 58, 95));
         btnClose.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
@@ -146,15 +132,20 @@ public class frmMenucli extends javax.swing.JPanel {
         
     }//GEN-LAST:event_btnNovoCliActionPerformed
 
-    private void btnAlterCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterCliActionPerformed
+    private void btnAlterCli1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterCli1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAlterCliActionPerformed
+        frmAlterCli altercli = new frmAlterCli();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(altercli);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
+    }//GEN-LAST:event_btnAlterCli1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAlterCli;
+    private javax.swing.JButton btnAlterCli1;
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnNovoCli;
-    private javax.swing.JButton btnRemCli;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel pnlCenter;

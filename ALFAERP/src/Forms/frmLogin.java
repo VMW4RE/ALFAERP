@@ -48,12 +48,14 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Usuário");
 
+        txtUser.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         txtUser.setBorder(null);
 
         jLabel2.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Senha");
 
+        txtPass.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         txtPass.setBorder(null);
 
         btnLogin.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N

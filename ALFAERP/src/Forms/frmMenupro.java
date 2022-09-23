@@ -30,7 +30,6 @@ public class frmMenupro extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         btnNovoCli = new javax.swing.JButton();
         btnAlterCli = new javax.swing.JButton();
-        btnRemCli = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         pnlCenter = new javax.swing.JPanel();
 
@@ -75,7 +74,7 @@ public class frmMenupro extends javax.swing.JPanel {
         btnAlterCli.setBackground(new java.awt.Color(0, 58, 77));
         btnAlterCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         btnAlterCli.setForeground(new java.awt.Color(255, 255, 255));
-        btnAlterCli.setText("Alterar");
+        btnAlterCli.setText("Consultar");
         btnAlterCli.setBorder(null);
         btnAlterCli.setBorderPainted(false);
         btnAlterCli.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -89,19 +88,6 @@ public class frmMenupro extends javax.swing.JPanel {
             }
         });
         jPanel1.add(btnAlterCli);
-
-        btnRemCli.setBackground(new java.awt.Color(0, 58, 77));
-        btnRemCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        btnRemCli.setForeground(new java.awt.Color(255, 255, 255));
-        btnRemCli.setText("Remover");
-        btnRemCli.setBorder(null);
-        btnRemCli.setBorderPainted(false);
-        btnRemCli.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRemCli.setFocusPainted(false);
-        btnRemCli.setFocusable(false);
-        btnRemCli.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnRemCli.setPreferredSize(new java.awt.Dimension(200, 50));
-        jPanel1.add(btnRemCli);
 
         btnClose.setBackground(new java.awt.Color(0, 58, 95));
         btnClose.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
@@ -137,10 +123,10 @@ public class frmMenupro extends javax.swing.JPanel {
 
     private void btnNovoCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoCliActionPerformed
         // TODO add your handling code here:
-        frmCadCli cadcli = new frmCadCli();
+        frmCadPro cadpro = new frmCadPro();
         
         pnlCenter.removeAll();
-        pnlCenter.add(cadcli);
+        pnlCenter.add(cadpro);
         pnlCenter.revalidate();
         pnlCenter.repaint();
         
@@ -154,7 +140,6 @@ public class frmMenupro extends javax.swing.JPanel {
     private javax.swing.JButton btnAlterCli;
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnNovoCli;
-    private javax.swing.JButton btnRemCli;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel pnlCenter;
