@@ -134,6 +134,12 @@ public class frmMenupro extends javax.swing.JPanel {
 
     private void btnAlterCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterCliActionPerformed
         // TODO add your handling code here:
+        frmAlterPro alterpro = new frmAlterPro();
+        
+        pnlCenter.removeAll();
+        pnlCenter.add(alterpro);
+        pnlCenter.revalidate();
+        pnlCenter.repaint();
     }//GEN-LAST:event_btnAlterCliActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
