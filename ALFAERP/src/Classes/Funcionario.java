@@ -11,12 +11,11 @@ import java.util.Date;
  * @author EMPRESA JUNIOR
  */
 public class Funcionario {
-    private Long codigofunc;
+    private int codigofunc;
     private String nomefunc;
     private String rgfunc;
     private String cpffunc;
-    private String ctfunc;
-    private String admissaofunc;
+    private Date admissaofunc;
     private String cargofunc;
     private String telefonefunc;
     private String telefonefunc2;
@@ -35,12 +34,11 @@ public class Funcionario {
         
     }
 
-    public Funcionario(Long codigofunc, String nomefunc, String rgfunc, String cpffunc, String ctfunc, String admissaofunc, String cargofunc, String telefonefunc, String telefonefunc2, String ruafunc, String cidadefunc, String estadofunc, String cepfunc, String bairrofunc, String ncasafunc, String loginfunc, String senhafunc, Date dtdemfunc) {
+    public Funcionario(int codigofunc, String nomefunc, String rgfunc, String cpffunc, Date admissaofunc, String cargofunc, String telefonefunc, String telefonefunc2, String ruafunc, String cidadefunc, String estadofunc, String cepfunc, String bairrofunc, String ncasafunc, String loginfunc, String senhafunc, Date dtdemfunc) {
         this.codigofunc = codigofunc;
         this.nomefunc = nomefunc;
         this.rgfunc = rgfunc;
         this.cpffunc = cpffunc;
-        this.ctfunc = ctfunc;
         this.admissaofunc = admissaofunc;
         this.cargofunc = cargofunc;
         this.telefonefunc = telefonefunc;
@@ -56,11 +54,11 @@ public class Funcionario {
         this.dtdemfunc = dtdemfunc;
     }
 
-    public Long getCodigofunc() {
+    public int getCodigofunc() {
         return codigofunc;
     }
 
-    public void setCodigofunc(Long codigofunc) {
+    public void setCodigofunc(int codigofunc) {
         this.codigofunc = codigofunc;
     }
 
@@ -88,19 +86,11 @@ public class Funcionario {
         this.cpffunc = cpffunc;
     }
 
-    public String getCtfunc() {
-        return ctfunc;
-    }
-
-    public void setCtfunc(String ctfunc) {
-        this.ctfunc = ctfunc;
-    }
-
-    public String getAdmissaofunc() {
+    public Date getAdmissaofunc() {
         return admissaofunc;
     }
 
-    public void setAdmissaofunc(String admissaofunc) {
+    public void setAdmissaofunc(Date admissaofunc) {
         this.admissaofunc = admissaofunc;
     }
 
@@ -200,6 +190,9 @@ public class Funcionario {
         this.dtdemfunc = dtdemfunc;
     }
 
+    
+
+   
     
 }
 

@@ -9,8 +9,8 @@ package Classes;
  * @author EMPRESA JUNIOR
  */
 public class Venda {
-    private Long idVenda;
-    private Long idProduto;
+    private int idVenda;
+    private int idProduto;
     private double precounprod;
     private double precototalvenda;
     private String tipopag;
@@ -21,7 +21,7 @@ public class Venda {
         
     }
 
-    public Venda(Long idVenda, Long idProduto, double precounprod, double precototalvenda, String tipopag, double desc) {
+    public Venda(int idVenda, int idProduto, double precounprod, double precototalvenda, String tipopag, double desc) {
         this.idVenda = idVenda;
         this.idProduto = idProduto;
         this.precounprod = precounprod;
@@ -30,19 +30,19 @@ public class Venda {
         this.desc = desc;
     }
 
-    public Long getIdVenda() {
+    public int getIdVenda() {
         return idVenda;
     }
 
-    public void setIdVenda(Long idVenda) {
+    public void setIdVenda(int idVenda) {
         this.idVenda = idVenda;
     }
 
-    public Long getIdProduto() {
+    public int getIdProduto() {
         return idProduto;
     }
 
-    public void setIdProduto(Long idProduto) {
+    public void setIdProduto(int idProduto) {
         this.idProduto = idProduto;
     }
 
@@ -77,6 +77,7 @@ public class Venda {
     public void setDesc(double desc) {
         this.desc = desc;
     }
-             
+
+    
             
 }
