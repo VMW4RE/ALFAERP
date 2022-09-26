@@ -42,7 +42,7 @@ public class ClienteDAO {
             pstm.setString(11, cliente.getEmailcli());
             
             pstm.execute();
-            System.out.println("Contado inserido com sucesso");
+            System.out.println("Cliente inserido com sucesso");
         } catch (Exception e){
             e.printStackTrace();
     
@@ -115,8 +115,11 @@ public class ClienteDAO {
                 conn.close();
             }
             
-        }catch
+        }catch{
+            
+        }
 }
     
 }
         
+}

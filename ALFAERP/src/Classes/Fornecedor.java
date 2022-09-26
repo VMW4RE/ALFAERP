@@ -9,7 +9,7 @@ package Classes;
  * @author EMPRESA JUNIOR
  */
 public class Fornecedor {
-    private Long codigoforn;
+    private int codigoforn;
     private String nomesocforn;
     private String cnpfforn;
     private String ruaforn;
@@ -27,7 +27,7 @@ public class Fornecedor {
         
     }
 
-    public Fornecedor(Long codigoforn, String nomesocforn, String cnpfforn, String ruaforn, String cidadeforn, String estadoforn, String cepforn, String bairroforn, String ncasaforn, String forntel1, String forntel2, String fornemail) {
+    public Fornecedor(int codigoforn, String nomesocforn, String cnpfforn, String ruaforn, String cidadeforn, String estadoforn, String cepforn, String bairroforn, String ncasaforn, String forntel1, String forntel2, String fornemail) {
         this.codigoforn = codigoforn;
         this.nomesocforn = nomesocforn;
         this.cnpfforn = cnpfforn;
@@ -42,11 +42,11 @@ public class Fornecedor {
         this.fornemail = fornemail;
     }
 
-    public Long getCodigoforn() {
+    public int getCodigoforn() {
         return codigoforn;
     }
 
-    public void setCodigoforn(Long codigoforn) {
+    public void setCodigoforn(int codigoforn) {
         this.codigoforn = codigoforn;
     }
 

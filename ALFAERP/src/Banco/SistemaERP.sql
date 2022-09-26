@@ -96,7 +96,6 @@ CREATE TABLE `funcionario` (
   `Nome` varchar(30) NOT NULL,
   `CPF` varchar(25) NOT NULL,
   `RG` varchar(25) NOT NULL,
-  `PIS` varchar(25) NOT NULL,
   `DtAdmissao` date NOT NULL,
   `Rua` varchar(30) NOT NULL,
   `Bairro` varchar(30) NOT NULL,
@@ -164,13 +163,14 @@ CREATE TABLE `venda` (
   `idVenda` int NOT NULL AUTO_INCREMENT,
   `idProduto` int NOT NULL,
   `idCliente` int NOT NULL,
-  `PrecoUntCompra` double NOT NULL,
+  `PrecoUntVenda` double NOT NULL, /* mudar para PreçoUntVenda */
   `Quantidade` varchar(10) NOT NULL,
   `Preco` double NOT NULL,
+  `Tipopag` varchar(30) NOT NULL,
   PRIMARY KEY (`idVenda`),
   KEY `VendaProduto_idx` (`idProduto`),
   KEY `VendaCliente_idx` (`idCliente`),
-  KEY `VendaUnt_idx` (`PrecoUntCompra`),
+  KEY `VendaUnt_idx` (`PrecoUntVenda`),
   CONSTRAINT `VendaCliente` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`idCliente`),
   CONSTRAINT `VendaProduto` FOREIGN KEY (`idProduto`) REFERENCES `produto` (`idProduto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
