@@ -11,7 +11,9 @@ package Classes;
 public class Venda {
     private int idVenda;
     private int idProduto;
+    private int idCliente;
     private double precounprod;
+    private double quantidade;
     private double precototalvenda;
     private String tipopag;
     private double desc;
@@ -21,10 +23,12 @@ public class Venda {
         
     }
 
-    public Venda(int idVenda, int idProduto, double precounprod, double precototalvenda, String tipopag, double desc) {
+    public Venda(int idVenda, int idProduto, int idCliente, double precounprod, double quantidade, double precototalvenda, String tipopag, double desc) {
         this.idVenda = idVenda;
         this.idProduto = idProduto;
+        this.idCliente = idCliente;
         this.precounprod = precounprod;
+        this.quantidade = quantidade;
         this.precototalvenda = precototalvenda;
         this.tipopag = tipopag;
         this.desc = desc;
@@ -46,12 +50,28 @@ public class Venda {
         this.idProduto = idProduto;
     }
 
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
     public double getPrecounprod() {
         return precounprod;
     }
 
     public void setPrecounprod(double precounprod) {
         this.precounprod = precounprod;
+    }
+
+    public double getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(double quantidade) {
+        this.quantidade = quantidade;
     }
 
     public double getPrecototalvenda() {
@@ -79,5 +99,5 @@ public class Venda {
     }
 
     
-            
+    
 }

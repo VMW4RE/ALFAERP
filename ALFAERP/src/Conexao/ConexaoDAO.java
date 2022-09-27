@@ -30,7 +30,7 @@ public class ConexaoDAO{
     
     //CONEXAO COM BANCO
     
-    public static Connection createConnectionToMySQL(Cliente cliente) throws Exception {
+    public static Connection createConnectionToMySQL() throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
         
         Connection connection = DriverManager.getConnection(DATABASE_URL , USERNAME , PASSWORD);
@@ -69,7 +69,7 @@ public class ConexaoDAO{
     public static void main(String[] args) throws Exception{
         //Recuperar conexao com o banco
         Cliente cliente = new Cliente();
-        Connection con = createConnectionToMySQL(cliente);
+        Connection con = createConnectionToMySQL();
         Fornecedor fornecedor = new Fornecedor();
         Connection conf = createConnectionToMySQLFor(fornecedor);
         Funcionario funcionario = new Funcionario();

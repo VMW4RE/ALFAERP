@@ -16,7 +16,7 @@ import java.sql.SQLException;
  */
 public class VendaDAO {
     public void cadastroVenda(Venda venda) throws SQLException, Exception{
-        String sql = "INSERT INTO venda(Nome, Descricao, PrecoUntCompra, PrecoUntVenda, NomeFornecedor, DtFabricacao, DtValidade) VALUES (?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO venda(Quantidade, Preco, Tipopag, Desc) VALUES (?,?,?,?)";
                       
         Connection conn = null;
         
@@ -25,17 +25,13 @@ public class VendaDAO {
         try {
             conn = ConexaoDAO.createConnectionToMySQLVend(venda);
             pstm = (PreparedStatement) conn.prepareStatement(sql);
-            pstm.setString(1, venda.Quantidade());
-            pstm.setString(2, produto.getDescripro());
-            pstm.setDouble(3, produto.getPreuncomppro());
-            pstm.setDouble(4, produto.getPreunvendpro());
-            pstm.setString(5, produto.getFornpro());
-            pstm.setDate(6, (Date) produto.getDtfbpro());
-            pstm.setDate(7, (Date) produto.getDtvapro());
-            
+            pstm.setDouble(1, venda.getQuantidade());
+            pstm.setDouble(2, venda.getPrecototalvenda());
+            pstm.setString(3, venda.getTipopag());
+            pstm.setDouble(4, venda.getDesc());           
             
             pstm.execute();
-            System.out.println("Produto inserido com sucesso");
+            System.out.println("Venda Realizada com Sucesso");
         } catch (Exception e){
             e.printStackTrace();
     

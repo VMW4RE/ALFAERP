@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package DAO;
 
 import Classes.Cliente;
@@ -11,6 +8,8 @@ import com.mysql.jdbc.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.ResultSet;
+
 
 /**
  *
@@ -27,7 +26,7 @@ public class ClienteDAO {
         PreparedStatement pstm = null;
         
         try {
-            conn = ConexaoDAO.createConnectionToMySQL(cliente);
+            conn = ConexaoDAO.createConnectionToMySQL();
             pstm = (PreparedStatement) conn.prepareStatement(sql);
             pstm.setString(1, cliente.getNomecli());
             pstm.setString(2, cliente.getCnpfcli());
@@ -63,28 +62,27 @@ public class ClienteDAO {
 
     }
     
-    public List<Cliente> getClientes{
-    
-        Cliente cliente = new Cliente();
+    public List<Cliente> getClientes(){
+        
         String sql = "SELECT * FROM cliente";
         
         List<Cliente> clientes = new ArrayList<Cliente>();
-        
+             
         Connection conn = null;
         PreparedStatement pstm = null;
         //Classe que vai recuperar os dados do banco. ***SELECT***
         ResultSet rset = null;
         
         try{
-            conn = ConexaoDAO.createConnectionToMySQL(cliente);
+            conn = ConexaoDAO.createConnectionToMySQL();
             
             pstm = (PreparedStatement) conn.prepareStatement(sql);
             
             rset = pstm.executeQuery();
             
             while (rset.next()){
-                
                     
+                    Cliente cliente = new Cliente(); 
                     //Recuperar
                     cliente.setCodigocli(rset.getInt("idCliente"));
                     cliente.setNomecli(rset.getString("Nome"));
@@ -99,7 +97,7 @@ public class ClienteDAO {
                     cliente.setTelcli2(rset.getString("Telefone2"));
                     cliente.setEmailcli(rset.getString("Email"));
                             
-                    cliente.add(cliente);
+                    clientes.add(cliente);
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -115,11 +113,12 @@ public class ClienteDAO {
                 conn.close();
             }
             
-        }catch{
-            
+        }catch (Exception e){
+            e.printStackTrace();
         }
 }
-    
+        return clientes;
 }
-        
+   
 }
+

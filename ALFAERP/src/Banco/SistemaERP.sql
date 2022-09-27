@@ -165,8 +165,9 @@ CREATE TABLE `venda` (
   `idCliente` int NOT NULL,
   `PrecoUntVenda` double NOT NULL, /* mudar para PreçoUntVenda */
   `Quantidade` varchar(10) NOT NULL,
-  `Preco` double NOT NULL,
+  `Preco` double,
   `Tipopag` varchar(30) NOT NULL,
+  `Desc` double,
   PRIMARY KEY (`idVenda`),
   KEY `VendaProduto_idx` (`idProduto`),
   KEY `VendaCliente_idx` (`idCliente`),
