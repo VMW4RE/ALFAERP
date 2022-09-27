@@ -8,12 +8,12 @@ package Forms;
  *
  * @author USUARIO
  */
-public class frmAlterCli extends javax.swing.JPanel {
+public class frmAlterPro extends javax.swing.JPanel {
 
     /**
      * Creates new form frmConsCli
      */
-    public frmAlterCli() {
+    public frmAlterPro() {
         initComponents();
     }
 
@@ -53,10 +53,6 @@ public class frmAlterCli extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         txtNumero = new javax.swing.JTextField();
         txtBairro = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        txtTel = new javax.swing.JTextField();
-        txtEmail = new javax.swing.JTextField();
         btnAlterar = new javax.swing.JButton();
         btnRemover = new javax.swing.JButton();
 
@@ -70,7 +66,7 @@ public class frmAlterCli extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 58, 77));
-        jLabel1.setText("CONSULTA - CLIENTE");
+        jLabel1.setText("CONSULTA - PRODUTO");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -79,7 +75,7 @@ public class frmAlterCli extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jLabel1)
-                .addContainerGap(701, Short.MAX_VALUE))
+                .addContainerGap(689, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,7 +134,7 @@ public class frmAlterCli extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("CPF/CNPJ");
+        jLabel3.setText("Descrição");
 
         txtNome.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         txtNome.setBorder(null);
@@ -158,11 +154,11 @@ public class frmAlterCli extends javax.swing.JPanel {
 
         jLabel6.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Cep");
+        jLabel6.setText("Fornecedor");
 
         jLabel4.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Cidade");
+        jLabel4.setText("Quantidade");
 
         txtCEP.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         txtCEP.setBorder(null);
@@ -182,11 +178,11 @@ public class frmAlterCli extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Estado");
+        jLabel7.setText("Preço de compra");
 
         jLabel8.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Rua");
+        jLabel8.setText("Preço de venda");
 
         txtEstado.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         txtEstado.setBorder(null);
@@ -206,11 +202,11 @@ public class frmAlterCli extends javax.swing.JPanel {
 
         jLabel9.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Número");
+        jLabel9.setText("Data de fabricação");
 
         jLabel10.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Bairro");
+        jLabel10.setText("Data de vencimento");
 
         txtNumero.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         txtNumero.setBorder(null);
@@ -225,30 +221,6 @@ public class frmAlterCli extends javax.swing.JPanel {
         txtBairro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBairroActionPerformed(evt);
-            }
-        });
-
-        jLabel11.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Telefone");
-
-        jLabel12.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Email");
-
-        txtTel.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        txtTel.setBorder(null);
-        txtTel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTelActionPerformed(evt);
-            }
-        });
-
-        txtEmail.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        txtEmail.setBorder(null);
-        txtEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEmailActionPerformed(evt);
             }
         });
 
@@ -319,15 +291,6 @@ public class frmAlterCli extends javax.swing.JPanel {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
                             .addComponent(txtBairro))
-                        .addGap(10, 10, 10))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-                            .addComponent(txtTel))
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-                            .addComponent(txtEmail))
                         .addGap(10, 10, 10))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -376,15 +339,7 @@ public class frmAlterCli extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12))
-                .addGap(0, 0, 0)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 169, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnRemover, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -430,14 +385,6 @@ public class frmAlterCli extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtBairroActionPerformed
 
-    private void txtTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelActionPerformed
-
-    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAlterar;
@@ -445,8 +392,6 @@ public class frmAlterCli extends javax.swing.JPanel {
     private javax.swing.JButton btnRemover;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -466,12 +411,10 @@ public class frmAlterCli extends javax.swing.JPanel {
     private javax.swing.JTextField txtCEP;
     private javax.swing.JTextField txtCPF;
     private javax.swing.JTextField txtCidade;
-    private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtEstado;
     private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtNumero;
     private javax.swing.JTextField txtPesquisa;
     private javax.swing.JTextField txtRua;
-    private javax.swing.JTextField txtTel;
     // End of variables declaration//GEN-END:variables
 }
