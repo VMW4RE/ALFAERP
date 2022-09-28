@@ -104,10 +104,10 @@ public class frmMenuestoque extends javax.swing.JPanel {
 
     private void btnNovoCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoCliActionPerformed
         // TODO add your handling code here:
-        frmCadCli cadcli = new frmCadCli();
+        frmEstoque estoque = new frmEstoque();
         
         pnlCenter.removeAll();
-        pnlCenter.add(cadcli);
+        pnlCenter.add(estoque);
         pnlCenter.revalidate();
         pnlCenter.repaint();
         

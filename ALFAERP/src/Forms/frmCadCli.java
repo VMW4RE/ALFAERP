@@ -32,25 +32,25 @@ public class frmCadCli extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        txtNomeCli = new javax.swing.JTextField();
+        txtCPFCli = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtCepCli = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtCidadeCli = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtEstadoCli = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtRuaCli = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        txtNumeroCli = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        txtBairroCli = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txtTelCli = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtEmailCli = new javax.swing.JTextField();
+        btnSalvarCli = new javax.swing.JButton();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -93,76 +93,76 @@ public class frmCadCli extends javax.swing.JPanel {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("CPF/CNPJ");
 
-        jTextField1.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField1.setBorder(null);
+        txtNomeCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtNomeCli.setBorder(null);
 
-        jTextField2.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField2.setBorder(null);
+        txtCPFCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtCPFCli.setBorder(null);
 
         jLabel4.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Cep");
 
-        jTextField3.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField3.setBorder(null);
+        txtCepCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtCepCli.setBorder(null);
 
         jLabel5.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Cidade");
 
-        jTextField4.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField4.setBorder(null);
+        txtCidadeCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtCidadeCli.setBorder(null);
 
         jLabel6.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Estado");
 
-        jTextField5.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField5.setBorder(null);
+        txtEstadoCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtEstadoCli.setBorder(null);
 
         jLabel7.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Rua");
 
-        jTextField6.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField6.setBorder(null);
+        txtRuaCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtRuaCli.setBorder(null);
 
         jLabel8.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Número");
 
-        jTextField7.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField7.setBorder(null);
+        txtNumeroCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtNumeroCli.setBorder(null);
 
         jLabel9.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Bairro");
 
-        jTextField8.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField8.setBorder(null);
+        txtBairroCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtBairroCli.setBorder(null);
 
         jLabel10.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Telefone");
 
-        jTextField9.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField9.setBorder(null);
+        txtTelCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtTelCli.setBorder(null);
 
         jLabel11.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Email");
 
-        jTextField10.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jTextField10.setBorder(null);
+        txtEmailCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtEmailCli.setBorder(null);
 
-        jButton1.setBackground(new java.awt.Color(0, 58, 76));
-        jButton1.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("SALVAR");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setFocusPainted(false);
-        jButton1.setFocusable(false);
+        btnSalvarCli.setBackground(new java.awt.Color(0, 58, 76));
+        btnSalvarCli.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        btnSalvarCli.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalvarCli.setText("SALVAR");
+        btnSalvarCli.setBorder(null);
+        btnSalvarCli.setBorderPainted(false);
+        btnSalvarCli.setFocusPainted(false);
+        btnSalvarCli.setFocusable(false);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -174,36 +174,36 @@ public class frmCadCli extends javax.swing.JPanel {
                         .addGap(10, 10, 10)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtNomeCli, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 382, Short.MAX_VALUE)
+                            .addComponent(txtCepCli, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 382, Short.MAX_VALUE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField9))
+                            .addComponent(txtRuaCli, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtTelCli))
                         .addGap(10, 10, 10)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField10)
-                            .addComponent(jTextField2)
+                            .addComponent(txtEmailCli)
+                            .addComponent(txtCPFCli)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jTextField7)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
+                                    .addComponent(txtNumeroCli)
+                                    .addComponent(txtCidadeCli, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                                         .addGap(1, 1, 1)
                                         .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(10, 10, 10)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
+                                    .addComponent(txtEstadoCli, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField8)))))
+                                    .addComponent(txtBairroCli)))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnSalvarCli, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(10, 10, 10))
         );
         jPanel3Layout.setVerticalGroup(
@@ -214,37 +214,37 @@ public class frmCadCli extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNomeCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCPFCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCepCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCidadeCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEstadoCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(0, 0, 0)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtRuaCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
                             .addComponent(jLabel9))
                         .addGap(0, 0, 0)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtNumeroCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtBairroCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jLabel11))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTelCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEmailCli, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSalvarCli, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
 
@@ -255,7 +255,7 @@ public class frmCadCli extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnSalvarCli;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -270,15 +270,15 @@ public class frmCadCli extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField txtBairroCli;
+    private javax.swing.JTextField txtCPFCli;
+    private javax.swing.JTextField txtCepCli;
+    private javax.swing.JTextField txtCidadeCli;
+    private javax.swing.JTextField txtEmailCli;
+    private javax.swing.JTextField txtEstadoCli;
+    private javax.swing.JTextField txtNomeCli;
+    private javax.swing.JTextField txtNumeroCli;
+    private javax.swing.JTextField txtRuaCli;
+    private javax.swing.JTextField txtTelCli;
     // End of variables declaration//GEN-END:variables
 }

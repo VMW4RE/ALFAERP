@@ -32,7 +32,6 @@ public class frmMenu extends javax.swing.JFrame {
         btnCaixa = new javax.swing.JButton();
         btnClientes = new javax.swing.JButton();
         btnProdutos = new javax.swing.JButton();
-        btnRelatorios = new javax.swing.JButton();
         btnCompras = new javax.swing.JButton();
         btnEstoque = new javax.swing.JButton();
         pnlCenter = new javax.swing.JPanel();
@@ -104,25 +103,6 @@ public class frmMenu extends javax.swing.JFrame {
             }
         });
         pnlTop.add(btnProdutos);
-
-        btnRelatorios.setBackground(new java.awt.Color(0, 58, 77));
-        btnRelatorios.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
-        btnRelatorios.setForeground(new java.awt.Color(255, 255, 255));
-        btnRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/document-free-icon-font.png"))); // NOI18N
-        btnRelatorios.setText("Relatórios");
-        btnRelatorios.setBorder(null);
-        btnRelatorios.setBorderPainted(false);
-        btnRelatorios.setFocusPainted(false);
-        btnRelatorios.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnRelatorios.setIconTextGap(5);
-        btnRelatorios.setPreferredSize(new java.awt.Dimension(100, 100));
-        btnRelatorios.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnRelatorios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRelatoriosActionPerformed(evt);
-            }
-        });
-        pnlTop.add(btnRelatorios);
 
         btnCompras.setBackground(new java.awt.Color(0, 58, 77));
         btnCompras.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
@@ -202,16 +182,6 @@ public class frmMenu extends javax.swing.JFrame {
         pnlCenter.repaint();
     }//GEN-LAST:event_btnCaixaActionPerformed
 
-    private void btnRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRelatoriosActionPerformed
-        // TODO add your handling code here:
-        frmMenurela menurel = new frmMenurela();
-        
-        pnlCenter.removeAll();
-        pnlCenter.add(menurel, BorderLayout.CENTER);
-        pnlCenter.revalidate();
-        pnlCenter.repaint();
-    }//GEN-LAST:event_btnRelatoriosActionPerformed
-
     private void btnComprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprasActionPerformed
         // TODO add your handling code here:
         frmMenucompra menucom = new frmMenucompra();
@@ -279,7 +249,6 @@ public class frmMenu extends javax.swing.JFrame {
     private javax.swing.JButton btnCompras;
     private javax.swing.JButton btnEstoque;
     private javax.swing.JButton btnProdutos;
-    private javax.swing.JButton btnRelatorios;
     private javax.swing.JPanel pnlCenter;
     private javax.swing.JPanel pnlTop;
     // End of variables declaration//GEN-END:variables

@@ -11,19 +11,19 @@ public class ALFAERP {
      
       
     public static void main(String[] args) {
-        ClienteDAO clienteDao = new ClienteDAO();
+        /*ClienteDAO clienteDao = new ClienteDAO();
         
         for(Cliente c : clienteDao.getClientes()) {
 			System.out.println("Contato: "+c.getNomecli());
-        }
+        }*/
         
         
         
         
         
-        /*frmLogin Login = new frmLogin();
+        frmLogin Login = new frmLogin();
         Login.setLocationRelativeTo(null);
-        Login.setVisible(true);*/
+        Login.setVisible(true);
 
         
     }

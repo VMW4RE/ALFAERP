@@ -29,9 +29,16 @@ public class frmPDV extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        pnlCenterPDV = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        txtNomePDV = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        txtQntdPDV = new javax.swing.JTextField();
+        txtValoruPDV = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtTotalPDV = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
@@ -57,51 +64,124 @@ public class frmPDV extends javax.swing.JPanel {
 
         jPanel7.setBackground(new java.awt.Color(46, 124, 149));
 
+        jButton1.setBackground(new java.awt.Color(0, 58, 76));
+        jButton1.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("FINALIZAR");
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setFocusPainted(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 900, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(774, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(44, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jPanel1.add(jPanel7, java.awt.BorderLayout.PAGE_END);
 
-        jPanel9.setBackground(new java.awt.Color(46, 124, 149));
+        pnlCenterPDV.setBackground(new java.awt.Color(46, 124, 149));
+        pnlCenterPDV.setMinimumSize(new java.awt.Dimension(600, 100));
+        pnlCenterPDV.setPreferredSize(new java.awt.Dimension(600, 300));
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        jLabel1.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("ITEM");
+
+        txtNomePDV.setEditable(false);
+        txtNomePDV.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtNomePDV.setBorder(null);
+
+        jLabel2.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("QUANTIDADE");
+
+        txtQntdPDV.setEditable(false);
+        txtQntdPDV.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtQntdPDV.setBorder(null);
+
+        txtValoruPDV.setEditable(false);
+        txtValoruPDV.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtValoruPDV.setBorder(null);
+
+        jLabel3.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("VALOR UNITÁRIO");
+
+        jLabel4.setFont(new java.awt.Font("Abel", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("VALOR TOTAL");
+
+        txtTotalPDV.setEditable(false);
+        txtTotalPDV.setFont(new java.awt.Font("Abel", 0, 18)); // NOI18N
+        txtTotalPDV.setBorder(null);
+
+        javax.swing.GroupLayout pnlCenterPDVLayout = new javax.swing.GroupLayout(pnlCenterPDV);
+        pnlCenterPDV.setLayout(pnlCenterPDVLayout);
+        pnlCenterPDVLayout.setHorizontalGroup(
+            pnlCenterPDVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlCenterPDVLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(pnlCenterPDVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlCenterPDVLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(pnlCenterPDVLayout.createSequentialGroup()
+                        .addGroup(pnlCenterPDVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(pnlCenterPDVLayout.createSequentialGroup()
+                        .addGroup(pnlCenterPDVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNomePDV)
+                            .addGroup(pnlCenterPDVLayout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(0, 443, Short.MAX_VALUE))
+                            .addComponent(txtValoruPDV)
+                            .addComponent(txtTotalPDV)
+                            .addComponent(txtQntdPDV, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(5, 5, 5))))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        pnlCenterPDVLayout.setVerticalGroup(
+            pnlCenterPDVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlCenterPDVLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jLabel1)
+                .addGap(0, 0, 0)
+                .addComponent(txtNomePDV, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel2)
+                .addGap(0, 0, 0)
+                .addComponent(txtQntdPDV, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel3)
+                .addGap(0, 0, 0)
+                .addComponent(txtValoruPDV, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel4)
+                .addGap(0, 0, 0)
+                .addComponent(txtTotalPDV, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel9, java.awt.BorderLayout.LINE_START);
-
-        jPanel3.setBackground(new java.awt.Color(46, 124, 149));
-        jPanel3.setMinimumSize(new java.awt.Dimension(600, 100));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel3, java.awt.BorderLayout.LINE_END);
-
-        jPanel2.setLayout(new java.awt.BorderLayout());
+        jPanel1.add(pnlCenterPDV, java.awt.BorderLayout.LINE_END);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -116,22 +196,31 @@ public class frmPDV extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel2.add(jScrollPane1, java.awt.BorderLayout.CENTER);
-
-        jPanel1.add(jPanel2, java.awt.BorderLayout.CENTER);
+        jPanel1.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JPanel pnlCenterPDV;
+    private javax.swing.JTextField txtNomePDV;
+    private javax.swing.JTextField txtQntdPDV;
+    private javax.swing.JTextField txtTotalPDV;
+    private javax.swing.JTextField txtValoruPDV;
     // End of variables declaration//GEN-END:variables
 }

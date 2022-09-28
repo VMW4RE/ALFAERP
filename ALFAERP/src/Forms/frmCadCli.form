@@ -100,24 +100,24 @@
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel10" max="32767" attributes="0"/>
-                                  <Component id="jTextField1" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="txtNomeCli" alignment="1" max="32767" attributes="0"/>
                                   <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField3" alignment="1" pref="382" max="32767" attributes="0"/>
+                                  <Component id="txtCepCli" alignment="1" pref="382" max="32767" attributes="0"/>
                                   <Component id="jLabel7" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextField6" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtRuaCli" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="txtTelCli" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel3" alignment="1" max="32767" attributes="0"/>
                                   <Component id="jLabel11" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField10" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtEmailCli" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCPFCli" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jTextField7" max="32767" attributes="0"/>
-                                          <Component id="jTextField4" alignment="0" pref="234" max="32767" attributes="0"/>
+                                          <Component id="txtNumeroCli" max="32767" attributes="0"/>
+                                          <Component id="txtCidadeCli" alignment="0" pref="234" max="32767" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                               <Component id="jLabel5" max="32767" attributes="0"/>
@@ -126,17 +126,17 @@
                                       </Group>
                                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTextField5" pref="244" max="32767" attributes="0"/>
+                                          <Component id="txtEstadoCli" pref="244" max="32767" attributes="0"/>
                                           <Component id="jLabel6" alignment="1" max="32767" attributes="0"/>
                                           <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtBairroCli" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton1" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="btnSalvarCli" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -152,8 +152,8 @@
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtNomeCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtCPFCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -161,15 +161,15 @@
                           <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jTextField4" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jTextField5" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtCepCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtCidadeCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtEstadoCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jTextField6" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="txtRuaCli" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -178,8 +178,8 @@
                               </Group>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField7" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="jTextField8" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="txtNumeroCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="txtBairroCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -188,11 +188,11 @@
                           <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField9" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jTextField10" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtTelCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txtEmailCli" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="164" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnSalvarCli" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -221,7 +221,7 @@
                 <Property name="text" type="java.lang.String" value="CPF/CNPJ"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="txtNomeCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -231,7 +231,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="txtCPFCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -252,7 +252,7 @@
                 <Property name="text" type="java.lang.String" value="Cep"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
+            <Component class="javax.swing.JTextField" name="txtCepCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -273,7 +273,7 @@
                 <Property name="text" type="java.lang.String" value="Cidade"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField4">
+            <Component class="javax.swing.JTextField" name="txtCidadeCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -294,7 +294,7 @@
                 <Property name="text" type="java.lang.String" value="Estado"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField5">
+            <Component class="javax.swing.JTextField" name="txtEstadoCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -315,7 +315,7 @@
                 <Property name="text" type="java.lang.String" value="Rua"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField6">
+            <Component class="javax.swing.JTextField" name="txtRuaCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -336,7 +336,7 @@
                 <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField7">
+            <Component class="javax.swing.JTextField" name="txtNumeroCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -357,7 +357,7 @@
                 <Property name="text" type="java.lang.String" value="Bairro"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField8">
+            <Component class="javax.swing.JTextField" name="txtBairroCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -378,7 +378,7 @@
                 <Property name="text" type="java.lang.String" value="Telefone"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField9">
+            <Component class="javax.swing.JTextField" name="txtTelCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -399,7 +399,7 @@
                 <Property name="text" type="java.lang.String" value="Email"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField10">
+            <Component class="javax.swing.JTextField" name="txtEmailCli">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Abel" size="18" style="0"/>
@@ -409,7 +409,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="btnSalvarCli">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="4c" green="3a" red="0" type="rgb"/>
