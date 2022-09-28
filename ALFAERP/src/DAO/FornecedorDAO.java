@@ -9,6 +9,9 @@ import Conexao.ConexaoDAO;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.ResultSet;
 
 /**
  *
@@ -60,4 +63,67 @@ public class FornecedorDAO {
             
 
     }
+    
+    
+    public List<Fornecedor> getFornecedores(){
+        
+        String sql = "SELECT * FROM cliente";
+        
+        List<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
+             
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        //Classe que vai recuperar os dados do banco. ***SELECT***
+        ResultSet rset = null;
+        
+        try{
+            conn = ConexaoDAO.createConnectionToMySQL();
+            
+            pstm = (PreparedStatement) conn.prepareStatement(sql);
+            
+            rset = pstm.executeQuery();
+            
+            while (rset.next()){
+                    
+                    Fornecedor fornecedor = new Fornecedor(); 
+                    //Recuperar
+                    fornecedor.setCodigoforn(rset.getInt("idFornecedor"));
+                    fornecedor.setNomesocforn(rset.getString("Nome"));
+                    fornecedor.setCnpfforn(rset.getString("CPF"));
+                    fornecedor.setRuaforn(rset.getString("Rua"));
+                    fornecedor.setCidadeforn(rset.getString("Bairro"));
+                    fornecedor.setEstadoforn(rset.getString("Numero"));
+                    fornecedor.setCepforn(rset.getString("CEP"));
+                    fornecedor.setBairroforn(rset.getString("Cidade"));
+                    fornecedor.setNcasaforn(rset.getString("Estado"));
+                    fornecedor.setForntel1(rset.getString("Telefone"));
+                    fornecedor.setForntel2(rset.getString("Telefone2"));
+                    fornecedor.setFornemail(rset.getString("Email"));
+                    
+                    
+                            
+                    fornecedores.add(fornecedor);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally{
+           try{ 
+            if(rset!=null){
+                rset.close();
+            }
+            if(pstm!=null){
+                pstm.close();
+            }
+            if(conn != null){
+                conn.close();
+            }
+            
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 }
+        return fornecedores;
+}
+}
+
+    

@@ -10,6 +10,9 @@ import com.mysql.jdbc.PreparedStatement;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.ResultSet;
 
 /**
  *
@@ -61,4 +64,69 @@ public class FuncionarioDAO {
             }
         }
     }
+        
+        public List<Funcionario> getFuncionario(){
+        
+        String sql = "SELECT * FROM cliente";
+        
+        List<Funcionario> funcionarios = new ArrayList<Funcionario>();
+             
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        //Classe que vai recuperar os dados do banco. ***SELECT***
+        ResultSet rset = null;
+        
+        try{
+            conn = ConexaoDAO.createConnectionToMySQL();
+            
+            pstm = (PreparedStatement) conn.prepareStatement(sql);
+            
+            rset = pstm.executeQuery();
+            
+            while (rset.next()){
+                    
+                    Funcionario funcionario = new Funcionario(); 
+                    //Recuperar
+                    funcionario.setCodigofunc(rset.getInt("idFuncionario"));
+                    funcionario.setNomefunc(rset.getString("Nome"));
+                    funcionario.setRgfunc(rset.getString("CPF"));
+                    funcionario.setCpffunc(rset.getString("Rua"));
+                    funcionario.setAdmissaofunc(rset.getDate("Bairro"));
+                    funcionario.setCargofunc(rset.getString("Numero"));
+                    funcionario.setTelefonefunc(rset.getString("CEP"));
+                    funcionario.setTelefonefunc2(rset.getString("Cidade"));
+                    funcionario.setRuafunc(rset.getString("Estado"));
+                    funcionario.setCidadefunc(rset.getString("Telefone"));
+                    funcionario.setEstadofunc(rset.getString("Telefone2"));
+                    funcionario.setBairrofunc(rset.getString("Email"));
+                    funcionario.setNcasafunc(rset.getString("Email"));
+                    funcionario.setLoginfunc(rset.getString("Email"));
+                    funcionario.setSenhafunc(rset.getString("Email"));
+                    funcionario.setDtdemfunc(rset.getDate("Email"));
+                    
+                    
+                    
+                            
+                    funcionarios.add(funcionario);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally{
+           try{ 
+            if(rset!=null){
+                rset.close();
+            }
+            if(pstm!=null){
+                pstm.close();
+            }
+            if(conn != null){
+                conn.close();
+            }
+            
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+}
+        return funcionarios;
+}
 }
