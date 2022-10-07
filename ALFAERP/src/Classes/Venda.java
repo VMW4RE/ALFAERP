@@ -13,7 +13,7 @@ public class Venda {
     private int idProduto;
     private int idCliente;
     private double precounprod;
-    private double quantidade;
+    private int quantidade;
     private double precototalvenda;
     private String tipopag;
     private double desc;
@@ -23,7 +23,7 @@ public class Venda {
         
     }
 
-    public Venda(int idVenda, int idProduto, int idCliente, double precounprod, double quantidade, double precototalvenda, String tipopag, double desc) {
+    public Venda(int idVenda, int idProduto, int idCliente, double precounprod, int quantidade, double precototalvenda, String tipopag, double desc) {
         this.idVenda = idVenda;
         this.idProduto = idProduto;
         this.idCliente = idCliente;
@@ -70,7 +70,7 @@ public class Venda {
         return quantidade;
     }
 
-    public void setQuantidade(double quantidade) {
+    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
 

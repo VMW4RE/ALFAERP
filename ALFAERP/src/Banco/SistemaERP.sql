@@ -107,6 +107,8 @@ CREATE TABLE `funcionario` (
   `Telefone` char(20) NOT NULL,
   `Telefone2` char(20) DEFAULT NULL,
   `DtDemissao` date DEFAULT NULL,
+  `Login`  varchar(20) DEFAULT NULL,
+  `Senha`  varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idFuncionario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=835 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -166,7 +168,7 @@ CREATE TABLE `venda` (
   `PrecoUntVenda` double NOT NULL, /* mudar para PreçoUntVenda */
   `Quantidade` varchar(10) NOT NULL,
   `Preco` double,
-  `Tipopag` varchar(30) NOT NULL,
+  `Tipopagamento` varchar(30) NOT NULL,
   `Desc` double,
   PRIMARY KEY (`idVenda`),
   KEY `VendaProduto_idx` (`idProduto`),

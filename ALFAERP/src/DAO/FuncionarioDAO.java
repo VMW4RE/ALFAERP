@@ -44,6 +44,8 @@ public class FuncionarioDAO {
             pstm.setString(11, funcionario.getTelefonefunc());
             pstm.setString(12, funcionario.getTelefonefunc2());
             pstm.setDate(13, (Date) funcionario.getDtdemfunc());
+            pstm.setString(14, funcionario.getLoginfunc());
+            pstm.setString(15, funcionario.getSenhafunc());
             
             pstm.execute();
             System.out.println("Funcionario inserido com sucesso");
@@ -67,7 +69,7 @@ public class FuncionarioDAO {
         
         public List<Funcionario> getFuncionario(){
         
-        String sql = "SELECT * FROM cliente";
+        String sql = "SELECT * FROM venda";
         
         List<Funcionario> funcionarios = new ArrayList<Funcionario>();
              
@@ -89,20 +91,20 @@ public class FuncionarioDAO {
                     //Recuperar
                     funcionario.setCodigofunc(rset.getInt("idFuncionario"));
                     funcionario.setNomefunc(rset.getString("Nome"));
-                    funcionario.setRgfunc(rset.getString("CPF"));
-                    funcionario.setCpffunc(rset.getString("Rua"));
-                    funcionario.setAdmissaofunc(rset.getDate("Bairro"));
-                    funcionario.setCargofunc(rset.getString("Numero"));
-                    funcionario.setTelefonefunc(rset.getString("CEP"));
-                    funcionario.setTelefonefunc2(rset.getString("Cidade"));
-                    funcionario.setRuafunc(rset.getString("Estado"));
-                    funcionario.setCidadefunc(rset.getString("Telefone"));
-                    funcionario.setEstadofunc(rset.getString("Telefone2"));
-                    funcionario.setBairrofunc(rset.getString("Email"));
-                    funcionario.setNcasafunc(rset.getString("Email"));
-                    funcionario.setLoginfunc(rset.getString("Email"));
-                    funcionario.setSenhafunc(rset.getString("Email"));
-                    funcionario.setDtdemfunc(rset.getDate("Email"));
+                    funcionario.setCpffunc(rset.getString("CPF"));
+                    funcionario.setRgfunc(rset.getString("RG"));
+                    funcionario.setAdmissaofunc(rset.getDate("DtAdmissao"));
+                    funcionario.setCargofunc(rset.getString("Cargo"));
+                    funcionario.setTelefonefunc(rset.getString("Telefone"));
+                    funcionario.setTelefonefunc2(rset.getString("Telefone2"));
+                    funcionario.setRuafunc(rset.getString("Rua"));
+                    funcionario.setCidadefunc(rset.getString("Cidade"));
+                    funcionario.setEstadofunc(rset.getString("Estado"));
+                    funcionario.setBairrofunc(rset.getString("Bairro"));
+                    funcionario.setNcasafunc(rset.getString("Numero"));
+                    funcionario.setLoginfunc(rset.getString("Login"));
+                    funcionario.setSenhafunc(rset.getString("Senha"));
+                    funcionario.setDtdemfunc(rset.getDate("DtDemissao"));
                     
                     
                     

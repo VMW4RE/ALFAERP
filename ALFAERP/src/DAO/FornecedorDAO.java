@@ -67,7 +67,7 @@ public class FornecedorDAO {
     
     public List<Fornecedor> getFornecedores(){
         
-        String sql = "SELECT * FROM cliente";
+        String sql = "SELECT * FROM fornecedor";
         
         List<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
              
@@ -91,11 +91,11 @@ public class FornecedorDAO {
                     fornecedor.setNomesocforn(rset.getString("Nome"));
                     fornecedor.setCnpfforn(rset.getString("CPF"));
                     fornecedor.setRuaforn(rset.getString("Rua"));
-                    fornecedor.setCidadeforn(rset.getString("Bairro"));
-                    fornecedor.setEstadoforn(rset.getString("Numero"));
+                    fornecedor.setCidadeforn(rset.getString("Cidade"));
+                    fornecedor.setEstadoforn(rset.getString("Estado"));
                     fornecedor.setCepforn(rset.getString("CEP"));
-                    fornecedor.setBairroforn(rset.getString("Cidade"));
-                    fornecedor.setNcasaforn(rset.getString("Estado"));
+                    fornecedor.setBairroforn(rset.getString("Bairro"));
+                    fornecedor.setNcasaforn(rset.getString("Numero"));
                     fornecedor.setForntel1(rset.getString("Telefone"));
                     fornecedor.setForntel2(rset.getString("Telefone2"));
                     fornecedor.setFornemail(rset.getString("Email"));
